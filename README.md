@@ -12,8 +12,10 @@ Reusable design system components built in Pencil (`.pen` files) for web and mob
 | **Features** | 6 | Icon Grid 3-col, Alternating Image+Text, Bento Grid, Numbered Steps, Feature Cards, Comparison Table |
 | **CTAs** | 5 | Full-Width Banner/Dark, Split with Image, Inline Card, Newsletter Signup, Final CTA+Testimonial |
 | **Footers** | 5 | Multi-Column Links, Minimal Centered, Dark Full, Newsletter+Links, App Download |
+| **FAQ/Accordion** | 5 | Clean Minimal, Bordered Cards, Two-Column Split, Dark/Bold, Categorized with Tabs |
+| **Gallery/Portfolio** | 5 | Masonry Grid, Uniform Grid+Overlay, Featured+Grid, Dark Showcase, Filterable Portfolio |
 
-**Total: 38 components**
+**Total: 48 components**
 
 ## Stack
 

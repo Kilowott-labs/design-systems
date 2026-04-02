@@ -12422,6 +12422,1992 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "IrrDr",
+      "x": 0,
+      "y": 11010,
+      "name": "FAQ 1 — Clean Minimal",
+      "clip": true,
+      "width": 1440,
+      "height": 680,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "Dq2IU",
+          "name": "faq1Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "MvWWj",
+              "fill": "#111827",
+              "content": "Frequently Asked Questions",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 36,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "HxozL",
+              "fill": "#6B7280",
+              "textGrowth": "fixed-width",
+              "width": 560,
+              "content": "Everything you need to know about our platform. Can't find what you're looking for? Reach out to our support team.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7igsQ",
+          "name": "faq1List",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "q10K2",
+              "name": "faq1Item1Open",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "PXtPT",
+                  "name": "q1",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9b3vw",
+                      "fill": "#111827",
+                      "content": "What is included in the free trial?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "Md66U",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-up",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4F46E5"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Kai8d",
+                  "name": "a1",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    0,
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "BDRUR",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Our free trial gives you full access to all features for 14 days — no credit card required. You'll be able to create unlimited projects, invite up to 10 team members, and explore every integration we offer.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "p3OFV",
+                  "name": "div1",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "31SF6",
+              "name": "faq1Item2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "go6PX",
+                  "name": "q2",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "FQFL6",
+                      "fill": "#111827",
+                      "content": "How does billing work after the trial?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "oOS8W",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "l1VtZ",
+                  "name": "div2",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ztWQJ",
+              "name": "faq1Item3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "R2N0B",
+                  "name": "q3",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "oglf3",
+                      "fill": "#111827",
+                      "content": "Can I cancel my subscription anytime?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "pdnHV",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "ZaC4z",
+                  "name": "div3",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fdHoo",
+              "name": "faq1Item4",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "rl5vt",
+                  "name": "q4",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "McY8Z",
+                      "fill": "#111827",
+                      "content": "Do you offer a discount for annual plans?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "5gyiv",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "RyN2Z",
+                  "name": "div4",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "DQgWu",
+              "name": "faq1Item5",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jZUKz",
+                  "name": "q5",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Own9e",
+                      "fill": "#111827",
+                      "content": "What integrations do you support?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "XP8Ah",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "AjOix",
+      "x": 1580,
+      "y": 11010,
+      "name": "FAQ 2 — Bordered Cards",
+      "clip": true,
+      "width": 1440,
+      "height": 740,
+      "fill": "#FAFAFA",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "y6Spz",
+          "name": "faq2Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "S96Cy",
+              "fill": "#111827",
+              "content": "Got Questions?",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 36,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "Hy9uE",
+              "fill": "#6B7280",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "Find answers to the most common questions about our product, pricing, and support.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "0RVK6",
+          "name": "faq2List",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "children": [
+            {
+              "type": "frame",
+              "id": "szNzn",
+              "name": "faq2Card1Open",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": [
+                20,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6wsiN",
+                  "name": "c1q",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2dMmu",
+                      "fill": "#111827",
+                      "content": "How do I get started with the platform?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nW9QU",
+                      "name": "c1icon",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#EEF2FF",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Yq3YH",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "minus",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4F46E5"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "aaSJP",
+                  "fill": "#6B7280",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Getting started is simple — sign up for a free account, complete the onboarding wizard, and you'll have your first project set up within minutes. We also offer guided tutorials and a dedicated onboarding specialist for team plans.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "Inter",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IHxQj",
+              "name": "faq2Card2",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "padding": [
+                20,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XUVhP",
+                  "name": "c2q",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VV4WV",
+                      "fill": "#111827",
+                      "content": "Is my data secure and encrypted?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OqzBk",
+                      "name": "c2icon",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#F4F4F5",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "ZAhan",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "plus",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Hpq9q",
+              "name": "faq2Card3",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "padding": [
+                20,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "TQuHt",
+                  "name": "c3q",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TPUGc",
+                      "fill": "#111827",
+                      "content": "Can I invite my whole team?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dh714",
+                      "name": "c3icon",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#F4F4F5",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "0pZYh",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "plus",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rGDJs",
+              "name": "faq2Card4",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "padding": [
+                20,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "S4kCa",
+                  "name": "c4q",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "F0b7x",
+                      "fill": "#111827",
+                      "content": "What happens when my trial expires?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "KbdCw",
+                      "name": "c4icon",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#F4F4F5",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "tDiXq",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "plus",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "wiq3r",
+              "name": "faq2Card5",
+              "width": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "padding": [
+                20,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jqce8",
+                  "name": "c5q",
+                  "width": "fill_container",
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "8VRoT",
+                      "fill": "#111827",
+                      "content": "Do you provide API access?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8n5Tx",
+                      "name": "c5icon",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "#F4F4F5",
+                      "cornerRadius": 14,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "a91BH",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "plus",
+                          "iconFontFamily": "lucide",
+                          "fill": "#9CA3AF"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "7slfd",
+      "x": 0,
+      "y": 11790,
+      "name": "FAQ 3 — Two-Column Split",
+      "clip": true,
+      "width": 1440,
+      "height": 640,
+      "fill": "#F5F0EB",
+      "gap": 80,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "xqmQ2",
+          "name": "faq3Left",
+          "width": 380,
+          "layout": "vertical",
+          "gap": 20,
+          "children": [
+            {
+              "type": "text",
+              "id": "w7ibQ",
+              "fill": "#1A1A1A",
+              "content": "Questions\n& Answers",
+              "lineHeight": 1.1,
+              "fontFamily": "DM Sans",
+              "fontSize": 40,
+              "fontWeight": "700",
+              "letterSpacing": -1.2
+            },
+            {
+              "type": "text",
+              "id": "tSC3Y",
+              "fill": "#6B7280",
+              "textGrowth": "fixed-width",
+              "width": 340,
+              "content": "We've compiled answers to the questions we hear most from our customers. If you need more help, our team is always available.",
+              "lineHeight": 1.7,
+              "fontFamily": "Inter",
+              "fontSize": 15,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "wiMgh",
+              "name": "faq3Cta",
+              "fill": "#1A1A1A",
+              "cornerRadius": 10,
+              "gap": 8,
+              "padding": [
+                14,
+                28
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "05Wdw",
+                  "fill": "#FFFFFF",
+                  "content": "Contact Support",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.28
+                },
+                {
+                  "type": "icon_font",
+                  "id": "joeyT",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#FFFFFF"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rtqJg",
+          "name": "faq3Right",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ajvh2",
+              "name": "faq3R1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "ipFTc",
+                  "name": "rdiv0",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#D4C4B8"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "FhkjF",
+                  "name": "rq1",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "T3snM",
+                      "fill": "#1A1A1A",
+                      "content": "What makes your platform different?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "N85HR",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-up",
+                      "iconFontFamily": "lucide",
+                      "fill": "#1A1A1A"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8keuX",
+                  "name": "ra1",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    0,
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "XiTZO",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Unlike other tools that try to do everything, we focus on doing one thing exceptionally well. Our platform is purpose-built for modern teams who value speed, simplicity, and reliability above all else.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vKl2B",
+              "name": "faq3R2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "oeJPU",
+                  "name": "rdiv1",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#D4C4B8"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "Je6yL",
+                  "name": "rq2",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "nM3vC",
+                      "fill": "#1A1A1A",
+                      "content": "How long does implementation take?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "fMcny",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gp3J9",
+              "name": "faq3R3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "OJ7zC",
+                  "name": "rdiv2",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#D4C4B8"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "gjyR8",
+                  "name": "rq3",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "2qB0I",
+                      "fill": "#1A1A1A",
+                      "content": "Do you offer custom enterprise plans?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "y6p5D",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "OFJZT",
+              "name": "faq3R4",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "Pd6G7",
+                  "name": "rdiv3",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#D4C4B8"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "AX7q7",
+                  "name": "rq4",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "6A3vN",
+                      "fill": "#1A1A1A",
+                      "content": "What kind of support do you provide?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "nlzgg",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "luLh0",
+              "name": "faq3R5",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "Z5uMS",
+                  "name": "rdiv4",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#D4C4B8"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "Ey96q",
+                  "name": "rq5",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "zn5GS",
+                      "fill": "#1A1A1A",
+                      "content": "Is there a free plan available?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "pe85G",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "hy0W6",
+                  "name": "rdiv5",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#D4C4B8"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "7ikWE",
+      "x": 1580,
+      "y": 11790,
+      "name": "FAQ 4 — Dark / Bold",
+      "clip": true,
+      "width": 1440,
+      "height": 700,
+      "fill": "#0F172A",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "7H6Y1",
+          "name": "faq4Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "6JgM9",
+              "name": "faq4Tag",
+              "fill": "#1E293B",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#334155"
+              },
+              "padding": [
+                6,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "GWtul",
+                  "fill": "#94A3B8",
+                  "content": "FAQ",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.2
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "CK6UA",
+              "fill": "#FFFFFF",
+              "content": "Common Questions",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 36,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "NaTNE",
+              "fill": "#94A3B8",
+              "content": "Quick answers to help you get the most out of our platform.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JkY3Y",
+          "name": "faq4List",
+          "width": "fill_container",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "AUu5u",
+              "name": "faq4D1Open",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "3J4JP",
+                  "name": "dd0",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#1E293B"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "QsOJ1",
+                  "name": "dq1",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "612NZ",
+                      "fill": "#FFFFFF",
+                      "content": "How does the pricing model work?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "Lqw5b",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-up",
+                      "iconFontFamily": "lucide",
+                      "fill": "#818CF8"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LyE81",
+                  "name": "da1",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    0,
+                    20,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VCuqp",
+                      "fill": "#94A3B8",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "We offer simple per-seat pricing with no hidden fees. Every plan includes unlimited projects, full API access, and priority support. Volume discounts are available for teams of 50 or more.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SMn5r",
+              "name": "faq4D2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "mJfWf",
+                  "name": "dd1",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#1E293B"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "EhK6r",
+                  "name": "dq2",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "3ngXR",
+                      "fill": "#E2E8F0",
+                      "content": "Can I migrate from another platform?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "s0MJq",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#475569"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CDABg",
+              "name": "faq4D3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "DZjrV",
+                  "name": "dd2",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#1E293B"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "tYA77",
+                  "name": "dq3",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vGNfk",
+                      "fill": "#E2E8F0",
+                      "content": "What uptime SLA do you guarantee?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "HZfus",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#475569"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rQcFA",
+              "name": "faq4D4",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "CmsJm",
+                  "name": "dd3",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#1E293B"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "TpoYB",
+                  "name": "dq4",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AQHVK",
+                      "fill": "#E2E8F0",
+                      "content": "Is there a dedicated mobile app?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "9LnKC",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#475569"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Sq1Jv",
+              "name": "faq4D5",
+              "width": "fill_container",
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "line",
+                  "id": "DuzZM",
+                  "name": "dd4",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#1E293B"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "i0okS",
+                  "name": "dq5",
+                  "width": "fill_container",
+                  "padding": [
+                    20,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "H3hHF",
+                      "fill": "#E2E8F0",
+                      "content": "How do I contact your sales team?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "CrSMo",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#475569"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "GvMN3",
+                  "name": "dd5",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#1E293B"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "DW2wE",
+      "x": 0,
+      "y": 12530,
+      "name": "FAQ 5 — Categorized with Tabs",
+      "clip": true,
+      "width": 1440,
+      "height": 720,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 40,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "BQIKe",
+          "name": "faq5Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "JHpVz",
+              "fill": "#111827",
+              "content": "Help Center",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 36,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "Sf3tQ",
+              "fill": "#6B7280",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "Browse by category or search for specific topics to find your answer quickly.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wI1Rv",
+          "name": "faq5Tabs",
+          "width": "fill_container",
+          "gap": 8,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "RW2ew",
+              "name": "tabActive",
+              "fill": "#111827",
+              "cornerRadius": 100,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OVSWA",
+                  "fill": "#FFFFFF",
+                  "content": "General",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "EHzOG",
+              "name": "tab2",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ZrCWu",
+                  "fill": "#6B7280",
+                  "content": "Billing",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Le86W",
+              "name": "tab3",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "XldHT",
+                  "fill": "#6B7280",
+                  "content": "Technical",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rEQ5l",
+              "name": "tab4",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Y2krj",
+                  "fill": "#6B7280",
+                  "content": "Account",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7dVZZ",
+              "name": "tab5",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "hvYwP",
+                  "fill": "#6B7280",
+                  "content": "Security",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "utnWW",
+          "name": "faq5Body",
+          "width": "fill_container",
+          "fill": "#FAFAFA",
+          "cornerRadius": 12,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "#F1F1F1"
+          },
+          "layout": "vertical",
+          "padding": [
+            4,
+            0
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "e7rEX",
+              "name": "faq5T1Open",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "FZEWW",
+                  "name": "tq1",
+                  "width": "fill_container",
+                  "padding": [
+                    18,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "WmuWw",
+                      "fill": "#111827",
+                      "content": "What is your refund policy?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "XHRfZ",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-up",
+                      "iconFontFamily": "lucide",
+                      "fill": "#4F46E5"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gRewL",
+                  "name": "ta1",
+                  "width": "fill_container",
+                  "padding": [
+                    0,
+                    0,
+                    18,
+                    0
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Wyn2s",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "We offer a 30-day money-back guarantee on all plans. If you're not satisfied, simply reach out to our support team and we'll process a full refund — no questions asked.",
+                      "lineHeight": 1.7,
+                      "fontFamily": "Inter",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "LFOOh",
+                  "name": "tdiv1",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gbf3O",
+              "name": "faq5T2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yLMRv",
+                  "name": "tq2",
+                  "width": "fill_container",
+                  "padding": [
+                    18,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "W3VKw",
+                      "fill": "#111827",
+                      "content": "How do I reset my password?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "dOOId",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "rGrNi",
+                  "name": "tdiv2",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "B1cr1",
+              "name": "faq5T3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5aZZY",
+                  "name": "tq3",
+                  "width": "fill_container",
+                  "padding": [
+                    18,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VlTCz",
+                      "fill": "#111827",
+                      "content": "Can I export my data at any time?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "aet0Z",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                },
+                {
+                  "type": "line",
+                  "id": "QvkAg",
+                  "name": "tdiv3",
+                  "width": "fill_container",
+                  "height": 0,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 1,
+                    "fill": "#E5E7EB"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kUDzU",
+              "name": "faq5T4",
+              "width": "fill_container",
+              "layout": "vertical",
+              "padding": [
+                0,
+                24
+              ],
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l6Xb5",
+                  "name": "tq4",
+                  "width": "fill_container",
+                  "padding": [
+                    18,
+                    0
+                  ],
+                  "justifyContent": "space_between",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iH3rE",
+                      "fill": "#111827",
+                      "content": "Do you support single sign-on (SSO)?",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "600",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "icon_font",
+                      "id": "QdXkB",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "chevron-down",
+                      "iconFontFamily": "lucide",
+                      "fill": "#9CA3AF"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
