@@ -13615,6 +13615,8 @@
               "type": "text",
               "id": "CK6UA",
               "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 600,
               "content": "Common Questions",
               "textAlign": "center",
               "fontFamily": "DM Sans",
@@ -13626,6 +13628,8 @@
               "type": "text",
               "id": "NaTNE",
               "fill": "#94A3B8",
+              "textGrowth": "fixed-width",
+              "width": 480,
               "content": "Quick answers to help you get the most out of our platform.",
               "textAlign": "center",
               "fontFamily": "Inter",
@@ -14400,6 +14404,2004 @@
                       "iconFontName": "chevron-down",
                       "iconFontFamily": "lucide",
                       "fill": "#9CA3AF"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "hcnPl",
+      "x": 0,
+      "y": 13350,
+      "name": "Gallery 1 — Masonry Grid",
+      "clip": true,
+      "width": 1440,
+      "height": 820,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "2d1ZB",
+          "name": "gal1Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Q9iQd",
+              "fill": "#111827",
+              "content": "Our Work",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 36,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "Q0p5H",
+              "fill": "#6B7280",
+              "textGrowth": "fixed-width",
+              "width": 520,
+              "content": "A curated selection of projects we're most proud of — from branding to digital experiences.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wkWeT",
+          "name": "gal1Grid",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "5HIuq",
+              "name": "col1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "0kKCc",
+                  "name": "img1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": [
+                    {
+                      "type": "image",
+                      "enabled": true,
+                      "url": "https://images.unsplash.com/photo-1558655146-d09347e92766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                      "mode": "fill"
+                    },
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": 180,
+                      "size": {
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#00000000",
+                          "position": 0.35
+                        },
+                        {
+                          "color": "#000000BB",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "TgtgO",
+                      "x": 20,
+                      "y": 264,
+                      "name": "label1",
+                      "fill": "#00000000",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KAsmL",
+                          "fill": "#FFFFFF",
+                          "content": "Meridian Brand Identity",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.3
+                        },
+                        {
+                          "type": "text",
+                          "id": "OUfnh",
+                          "fill": "#FFFFFFB3",
+                          "content": "Branding",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "4jmb8",
+                  "name": "img2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 240,
+                  "fill": [
+                    {
+                      "type": "image",
+                      "enabled": true,
+                      "url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                      "mode": "fill"
+                    },
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": 180,
+                      "size": {
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#00000000",
+                          "position": 0.3
+                        },
+                        {
+                          "color": "#000000BB",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "SNZrc",
+                      "x": 20,
+                      "y": 184,
+                      "name": "label2",
+                      "fill": "#00000000",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YNXfz",
+                          "fill": "#FFFFFF",
+                          "content": "Pulse Dashboard",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.3
+                        },
+                        {
+                          "type": "text",
+                          "id": "psXG6",
+                          "fill": "#FFFFFFB3",
+                          "content": "UI Design",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "2NWrc",
+              "name": "col2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "daAxY",
+                  "name": "img3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 240,
+                  "fill": [
+                    {
+                      "type": "image",
+                      "enabled": true,
+                      "url": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                      "mode": "fill"
+                    },
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": 180,
+                      "size": {
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#00000000",
+                          "position": 0.3
+                        },
+                        {
+                          "color": "#000000BB",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "azk2d",
+                      "x": 20,
+                      "y": 184,
+                      "name": "label3",
+                      "fill": "#00000000",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sGNPJ",
+                          "fill": "#FFFFFF",
+                          "content": "Aqua Landing Page",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.3
+                        },
+                        {
+                          "type": "text",
+                          "id": "RX2SD",
+                          "fill": "#FFFFFFB3",
+                          "content": "Web Design",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "anzVa",
+                  "name": "img4",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": [
+                    {
+                      "type": "image",
+                      "enabled": true,
+                      "url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                      "mode": "fill"
+                    },
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": 180,
+                      "size": {
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#00000000",
+                          "position": 0.35
+                        },
+                        {
+                          "color": "#000000BB",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xzlGE",
+                      "x": 20,
+                      "y": 264,
+                      "name": "label4",
+                      "fill": "#00000000",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "nctO8",
+                          "fill": "#FFFFFF",
+                          "content": "Verde App Redesign",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.3
+                        },
+                        {
+                          "type": "text",
+                          "id": "zzcCw",
+                          "fill": "#FFFFFFB3",
+                          "content": "Mobile App",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "eFF2e",
+              "name": "col3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "DaaL8",
+                  "name": "img5",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 280,
+                  "fill": [
+                    {
+                      "type": "image",
+                      "enabled": true,
+                      "url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                      "mode": "fill"
+                    },
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": 180,
+                      "size": {
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#00000000",
+                          "position": 0.3
+                        },
+                        {
+                          "color": "#000000BB",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "qx7vg",
+                      "x": 20,
+                      "y": 224,
+                      "name": "label5",
+                      "fill": "#00000000",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "dh8y9",
+                          "fill": "#FFFFFF",
+                          "content": "Solstice Campaign",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.3
+                        },
+                        {
+                          "type": "text",
+                          "id": "AqtRr",
+                          "fill": "#FFFFFFB3",
+                          "content": "Marketing",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "lTmh7",
+                  "name": "img6",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 280,
+                  "fill": [
+                    {
+                      "type": "image",
+                      "enabled": true,
+                      "url": "https://images.unsplash.com/photo-1523726491678-bf852e717f6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                      "mode": "fill"
+                    },
+                    {
+                      "type": "gradient",
+                      "gradientType": "linear",
+                      "enabled": true,
+                      "rotation": 180,
+                      "size": {
+                        "height": 1
+                      },
+                      "colors": [
+                        {
+                          "color": "#00000000",
+                          "position": 0.3
+                        },
+                        {
+                          "color": "#000000BB",
+                          "position": 1
+                        }
+                      ]
+                    }
+                  ],
+                  "cornerRadius": 12,
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "tclR8",
+                      "x": 20,
+                      "y": 224,
+                      "name": "label6",
+                      "fill": "#00000000",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "K7G4b",
+                          "fill": "#FFFFFF",
+                          "content": "Amethyst E-commerce",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 15,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.3
+                        },
+                        {
+                          "type": "text",
+                          "id": "YglqQ",
+                          "fill": "#FFFFFFB3",
+                          "content": "E-commerce",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "y3daQ",
+      "x": 1580,
+      "y": 13350,
+      "name": "Gallery 2 — Uniform Grid + Overlay",
+      "clip": true,
+      "width": 1440,
+      "height": 900,
+      "fill": "#FAFAFA",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "hmgsy",
+          "name": "gal2Head",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "frame",
+              "id": "ivntQ",
+              "name": "g2Left",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "0DMOw",
+                  "fill": "#111827",
+                  "content": "Selected Projects",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 36,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "83uXg",
+                  "fill": "#6B7280",
+                  "content": "Explore our latest work across branding, web, and product design.",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "YoBt1",
+              "name": "g2ViewAll",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "f0jG3",
+                  "fill": "#111827",
+                  "content": "View All",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.28
+                },
+                {
+                  "type": "icon_font",
+                  "id": "b0sLR",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#111827"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "qymXU",
+          "name": "gal2Grid",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "hf1Ds",
+              "name": "card1",
+              "clip": true,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "l751c",
+                  "name": "c1Img",
+                  "metadata": {
+                    "type": "unsplash"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "cf8e1",
+                  "name": "c1Txt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Csh4R",
+                      "name": "c1Tag",
+                      "fill": "#EEF2FF",
+                      "cornerRadius": 100,
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Rkgdu",
+                          "fill": "#4F46E5",
+                          "content": "UI/UX Design",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z9aux",
+                      "fill": "#111827",
+                      "content": "Nova Banking App",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.36
+                    },
+                    {
+                      "type": "text",
+                      "id": "AtoYh",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A modern mobile banking experience with biometric auth and real-time analytics.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "yqwSp",
+                      "name": "c1Link",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "an7Ai",
+                          "fill": "#4F46E5",
+                          "content": "View Project",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "BaspA",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4F46E5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "6NLR7",
+              "name": "card2",
+              "clip": true,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "T7qHP",
+                  "name": "c2Img",
+                  "metadata": {
+                    "type": "unsplash"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "5BqOW",
+                  "name": "c2Txt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nOuLY",
+                      "name": "c2Tag",
+                      "fill": "#F0FDF4",
+                      "cornerRadius": 100,
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OJdYA",
+                          "fill": "#16653A",
+                          "content": "Web Design",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z6coF",
+                      "fill": "#111827",
+                      "content": "Zenith SaaS Platform",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.36
+                    },
+                    {
+                      "type": "text",
+                      "id": "SoWAq",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "End-to-end design and development of a project management tool for distributed teams.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "LK3ad",
+                      "name": "c2Link",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "BLCQK",
+                          "fill": "#4F46E5",
+                          "content": "View Project",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "qakpe",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4F46E5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "prDQy",
+              "name": "card3",
+              "clip": true,
+              "width": "fill_container",
+              "height": "fill_container",
+              "fill": "#FFFFFF",
+              "cornerRadius": 12,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "layout": "vertical",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8gKx4",
+                  "name": "c3Img",
+                  "metadata": {
+                    "type": "unsplash"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  }
+                },
+                {
+                  "type": "frame",
+                  "id": "13v1V",
+                  "name": "c3Txt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "padding": [
+                    16,
+                    20
+                  ],
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xb4Q6",
+                      "name": "c3Tag",
+                      "fill": "#FFF7ED",
+                      "cornerRadius": 100,
+                      "padding": [
+                        4,
+                        10
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GnSFz",
+                          "fill": "#C24612",
+                          "content": "Branding",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CI50P",
+                      "fill": "#111827",
+                      "content": "Prism Brand System",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.36
+                    },
+                    {
+                      "type": "text",
+                      "id": "uQHwG",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Complete visual identity system including logo, typography, color palette, and brand guidelines.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3jPzc",
+                      "name": "c3Link",
+                      "gap": 6,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "P4QwC",
+                          "fill": "#4F46E5",
+                          "content": "View Project",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "3GlmH",
+                          "width": 14,
+                          "height": 14,
+                          "iconFontName": "arrow-up-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "#4F46E5"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "L5FRO",
+      "x": 0,
+      "y": 14270,
+      "name": "Gallery 3 — Featured + Grid",
+      "clip": true,
+      "width": 1440,
+      "height": 760,
+      "fill": "#F5F0EB",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "ImTER",
+          "name": "gal3Head",
+          "width": "fill_container",
+          "justifyContent": "space_between",
+          "alignItems": "end",
+          "children": [
+            {
+              "type": "frame",
+              "id": "VfGpx",
+              "name": "g3HeadLeft",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OguHM",
+                  "fill": "#1A1A1A",
+                  "content": "Featured Work",
+                  "fontFamily": "DM Sans",
+                  "fontSize": 36,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "text",
+                  "id": "PRKPy",
+                  "fill": "#6B7280",
+                  "content": "Handpicked projects that showcase our design philosophy and craft.",
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "43yRs",
+              "name": "g3ViewAll",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "PWaY2",
+                  "fill": "#1A1A1A",
+                  "content": "View All Projects",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.28
+                },
+                {
+                  "type": "icon_font",
+                  "id": "mtdqe",
+                  "width": 16,
+                  "height": 16,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "#1A1A1A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "cj3Cl",
+          "name": "gal3Body",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "bNDHv",
+              "name": "featuredCard",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "RlyGN",
+                  "name": "featImg",
+                  "metadata": {
+                    "type": "unsplash"
+                  },
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "AT4r3",
+                  "name": "featTxt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "fbWyR",
+                      "name": "featMeta",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "gits7",
+                          "name": "featTag",
+                          "fill": "#1A1A1A",
+                          "cornerRadius": 100,
+                          "padding": [
+                            4,
+                            10
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "vIQqg",
+                              "fill": "#FFFFFF",
+                              "content": "Case Study",
+                              "fontFamily": "Inter",
+                              "fontSize": 11,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "zNIXy",
+                          "fill": "#9CA3AF",
+                          "content": "Fintech  •  2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "GmFXz",
+                      "fill": "#1A1A1A",
+                      "content": "Horizon — Platform Redesign",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 22,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.44
+                    },
+                    {
+                      "type": "text",
+                      "id": "XnXe8",
+                      "fill": "#6B7280",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A complete redesign of a digital banking experience serving 2M+ users.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Aie1r",
+              "name": "sideCards",
+              "width": "fill_container",
+              "height": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "SOsLC",
+                  "name": "sideCard1",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "vG6xT",
+                      "name": "s1Img",
+                      "metadata": {
+                        "type": "unsplash"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1634942537034-2531766767d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 12
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Xfiun",
+                      "name": "s1Txt",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "loUO2",
+                          "fill": "#1A1A1A",
+                          "content": "Aura Brand Identity",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 16,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.32
+                        },
+                        {
+                          "type": "text",
+                          "id": "g2BK9",
+                          "fill": "#9CA3AF",
+                          "content": "Branding  •  2025",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xmimy",
+                  "name": "sideCard2",
+                  "width": "fill_container",
+                  "height": "fill_container",
+                  "layout": "vertical",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "mFvig",
+                      "name": "s2Img",
+                      "metadata": {
+                        "type": "unsplash"
+                      },
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": "fill_container",
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1616469829581-73993eb86b02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "fill"
+                      },
+                      "cornerRadius": 12
+                    },
+                    {
+                      "type": "frame",
+                      "id": "IeW4d",
+                      "name": "s2Txt",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 2,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "p0LAm",
+                          "fill": "#1A1A1A",
+                          "content": "Bloom Mobile App",
+                          "fontFamily": "DM Sans",
+                          "fontSize": 16,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.32
+                        },
+                        {
+                          "type": "text",
+                          "id": "UZkXF",
+                          "fill": "#9CA3AF",
+                          "content": "Product Design  •  2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "E5JmA",
+      "x": 1580,
+      "y": 14270,
+      "name": "Gallery 4 — Dark Showcase",
+      "clip": true,
+      "width": 1440,
+      "height": 780,
+      "fill": "#09090B",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "D43yx",
+          "name": "gal4Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "NLIAu",
+              "name": "g4Tag",
+              "fill": "#18181B",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#27272A"
+              },
+              "padding": [
+                6,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HGBmT",
+                  "fill": "#A1A1AA",
+                  "content": "PORTFOLIO",
+                  "fontFamily": "Inter",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 1.5
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "bTjDD",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "Crafted with Precision",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 40,
+              "fontWeight": "700",
+              "letterSpacing": -1.2
+            },
+            {
+              "type": "text",
+              "id": "xNt6B",
+              "fill": "#71717A",
+              "textGrowth": "fixed-width",
+              "width": 480,
+              "content": "Each project is a story of collaboration, strategy, and meticulous execution.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aZxK8",
+          "name": "gal4Grid",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 20,
+          "children": [
+            {
+              "type": "frame",
+              "id": "MWnWd",
+              "name": "gal4Card1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3iIOQ",
+                  "name": "g4img1",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "6lVgV",
+                  "name": "g4txt1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "cHADc",
+                      "fill": "#FAFAFA",
+                      "content": "Obsidian Platform",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.36
+                    },
+                    {
+                      "type": "text",
+                      "id": "7dJ7l",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "A dark-themed trading platform built for professional crypto traders.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "COFIo",
+              "name": "gal4Card2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "zgfxU",
+                  "name": "g4img2",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "SErEB",
+                  "name": "g4txt2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "iUzQL",
+                      "fill": "#FAFAFA",
+                      "content": "Nebula Music App",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.36
+                    },
+                    {
+                      "type": "text",
+                      "id": "DAZe4",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Immersive music streaming experience with spatial audio visualization.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qjyAG",
+              "name": "gal4Card3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "XAQdD",
+                  "name": "g4img3",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "X8eoJ",
+                  "name": "g4txt3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 6,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "vLQkj",
+                      "fill": "#FAFAFA",
+                      "content": "Atlas Navigation",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 18,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.36
+                    },
+                    {
+                      "type": "text",
+                      "id": "8uCi2",
+                      "fill": "#71717A",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Next-generation mapping and navigation for autonomous vehicles.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "IX9zM",
+      "x": 0,
+      "y": 15130,
+      "name": "Gallery 5 — Filterable Portfolio",
+      "clip": true,
+      "width": 1440,
+      "height": 820,
+      "fill": "#FFFFFF",
+      "layout": "vertical",
+      "gap": 40,
+      "padding": [
+        64,
+        90
+      ],
+      "children": [
+        {
+          "type": "frame",
+          "id": "fwuDA",
+          "name": "gal5Head",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "DaFqZ",
+              "fill": "#111827",
+              "content": "Our Portfolio",
+              "textAlign": "center",
+              "fontFamily": "DM Sans",
+              "fontSize": 36,
+              "fontWeight": "700",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "Yqkru",
+              "fill": "#6B7280",
+              "textGrowth": "fixed-width",
+              "width": 480,
+              "content": "Filter by category to explore the work that matters most to you.",
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LC75m",
+          "name": "gal5Tabs",
+          "width": "fill_container",
+          "gap": 8,
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "EPmGE",
+              "name": "filterAll",
+              "fill": "#111827",
+              "cornerRadius": 100,
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gOA7P",
+                  "fill": "#FFFFFF",
+                  "content": "All Work",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ICslY",
+              "name": "filterBrand",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Zlv1d",
+                  "fill": "#6B7280",
+                  "content": "Branding",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BOVF6",
+              "name": "filterWeb",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "FkNEE",
+                  "fill": "#6B7280",
+                  "content": "Web Design",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "bERyA",
+              "name": "filterMobile",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "z4XdX",
+                  "fill": "#6B7280",
+                  "content": "Mobile",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "HxHTX",
+              "name": "filterProduct",
+              "cornerRadius": 100,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "#E5E7EB"
+              },
+              "padding": [
+                10,
+                20
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "6aK4V",
+                  "fill": "#6B7280",
+                  "content": "Product",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "JLzuZ",
+          "name": "gal5Grid",
+          "width": "fill_container",
+          "height": "fill_container",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "bMz9S",
+              "name": "pCard1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "3VPlC",
+                  "name": "pc1img",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "sdtEG",
+                  "name": "pc1txt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "npoIC",
+                      "fill": "#111827",
+                      "content": "Vertex Brand Identity",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "8zi0A",
+                      "name": "pc1meta",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "QiZRY",
+                          "fill": "#6B7280",
+                          "content": "Branding",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "skQ01",
+                          "fill": "#D1D5DB",
+                          "content": "•",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "7kr67",
+                          "fill": "#6B7280",
+                          "content": "2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZHqV6",
+              "name": "pCard2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "ICyV5",
+                  "name": "pc2img",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1555421689-491a97ff2040?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "aXpEp",
+                  "name": "pc2txt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Bh5UH",
+                      "fill": "#111827",
+                      "content": "Flux Analytics Platform",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WlkAS",
+                      "name": "pc2meta",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "AsZrG",
+                          "fill": "#6B7280",
+                          "content": "Web Design",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "QPPFf",
+                          "fill": "#D1D5DB",
+                          "content": "•",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "hzbZv",
+                          "fill": "#6B7280",
+                          "content": "2025",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "fw5kW",
+              "name": "pCard3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 14,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KpYGO",
+                  "name": "pc3img",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 300,
+                  "fill": {
+                    "type": "image",
+                    "enabled": true,
+                    "url": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+                    "mode": "fill"
+                  },
+                  "cornerRadius": 12
+                },
+                {
+                  "type": "frame",
+                  "id": "h6AkU",
+                  "name": "pc3txt",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rtMWI",
+                      "fill": "#111827",
+                      "content": "Neon Mobile Experience",
+                      "fontFamily": "DM Sans",
+                      "fontSize": 17,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.34
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2Ji92",
+                      "name": "pc3meta",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "0ZXqY",
+                          "fill": "#6B7280",
+                          "content": "Mobile App",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "2krSf",
+                          "fill": "#D1D5DB",
+                          "content": "•",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Qc5EE",
+                          "fill": "#6B7280",
+                          "content": "2026",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
                     }
                   ]
                 }
