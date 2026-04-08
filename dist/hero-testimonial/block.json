@@ -1,0 +1,91 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/hero-testimonial",
+  "version": "1.0.0",
+  "title": "Hero Testimonial",
+  "category": "ytf",
+  "icon": "format-quote",
+  "description": "Enterprise B2B testimonial-led hero with large quote, author attribution, results metrics row, dual CTAs, and trusted-by logo bar.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "quote": {
+      "type": "string",
+      "default": "Catalyst transformed how our 2,000-person engineering team ships software. We went from quarterly releases to weekly — with fewer bugs and happier developers."
+    },
+    "authorName": {
+      "type": "string",
+      "default": "Marcus Chen, VP of Engineering"
+    },
+    "authorCompany": {
+      "type": "string",
+      "default": "Dataflow Inc. \u00b7 $2.4B Series D"
+    },
+    "authorImage": {
+      "type": "string",
+      "default": ""
+    },
+    "authorImageId": {
+      "type": "number",
+      "default": 0
+    },
+    "results": {
+      "type": "array",
+      "default": [
+        { "id": 1, "value": "4x", "label": "faster releases" },
+        { "id": 2, "value": "67%", "label": "fewer incidents" },
+        { "id": 3, "value": "92", "label": "NPS score" }
+      ]
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "default": "See Customer Stories"
+    },
+    "primaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "default": "Request Demo"
+    },
+    "secondaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showSecondaryCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "showTrustBar": {
+      "type": "boolean",
+      "default": true
+    },
+    "trustLabel": {
+      "type": "string",
+      "default": "TRUSTED BY"
+    },
+    "trustItems": {
+      "type": "array",
+      "default": [
+        { "id": 1, "label": "DATAFLOW" },
+        { "id": 2, "label": "SCALE AI" },
+        { "id": 3, "label": "PLAID" },
+        { "id": 4, "label": "RAMP" },
+        { "id": 5, "label": "BREX" }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": { "padding": true, "margin": true }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

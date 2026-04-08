@@ -1,0 +1,81 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/hero-magazine",
+  "version": "1.0.0",
+  "title": "Hero Magazine Editorial",
+  "category": "ytf",
+  "icon": "media-text",
+  "description": "Magazine editorial hero with featured image on left, article headline and author info on right, and optional trending bar at bottom.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "heading": {
+      "type": "string",
+      "default": "The Architecture of Silence: How Minimalism Is Reshaping Urban Living"
+    },
+    "deck": {
+      "type": "string",
+      "default": "In an era of sensory overload, a new generation of architects is designing buildings that prioritize stillness, natural light, and the radical beauty of empty space."
+    },
+    "categoryLabel": {
+      "type": "string",
+      "default": "DESIGN"
+    },
+    "readTime": {
+      "type": "string",
+      "default": "8 MIN READ"
+    },
+    "authorName": {
+      "type": "string",
+      "default": "Elena Vasquez"
+    },
+    "authorDate": {
+      "type": "string",
+      "default": "April 2, 2026"
+    },
+    "authorImage": {
+      "type": "string",
+      "default": ""
+    },
+    "authorImageId": {
+      "type": "number",
+      "default": 0
+    },
+    "featuredImage": {
+      "type": "string",
+      "default": ""
+    },
+    "featuredImageId": {
+      "type": "number",
+      "default": 0
+    },
+    "featuredImageAlt": {
+      "type": "string",
+      "default": "Minimalist architectural interior with natural light"
+    },
+    "showTrending": {
+      "type": "boolean",
+      "default": true
+    },
+    "trendingItems": {
+      "type": "array",
+      "default": [
+        { "id": 1, "text": "The Rise of Bio-Architecture" },
+        { "id": 2, "text": "Why Gen Z Is Leaving Social Media" },
+        { "id": 3, "text": "Inside Apple's Secret Design Lab" }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": { "padding": true, "margin": true }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

@@ -1,0 +1,131 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/faq-accordion",
+  "version": "1.0.0",
+  "title": "FAQ Accordion",
+  "category": "ytf",
+  "icon": "editor-help",
+  "description": "Expandable FAQ accordion with multiple style variants, layout options, optional category tabs, and smooth collapse/expand transitions.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Frequently Asked Questions"
+    },
+    "description": {
+      "type": "string",
+      "default": "Everything you need to know about our platform. Can't find what you're looking for? Reach out to our support team."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "style": {
+      "type": "string",
+      "default": "minimal",
+      "enum": ["minimal", "cards", "warm"]
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "layout": {
+      "type": "string",
+      "default": "centered",
+      "enum": ["centered", "split"]
+    },
+    "iconStyle": {
+      "type": "string",
+      "default": "chevron",
+      "enum": ["chevron", "plus-minus"]
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": false
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "FAQ"
+    },
+    "showTabs": {
+      "type": "boolean",
+      "default": false
+    },
+    "showCta": {
+      "type": "boolean",
+      "default": false
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Contact Support"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "allowMultipleOpen": {
+      "type": "boolean",
+      "default": false
+    },
+    "firstItemOpen": {
+      "type": "boolean",
+      "default": true
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "question": "What is included in the free trial?",
+          "answer": "Our free trial gives you full access to all features for 14 days — no credit card required. You'll be able to create unlimited projects, invite up to 10 team members, and explore every integration we offer.",
+          "category": "general"
+        },
+        {
+          "id": 2,
+          "question": "How does billing work after the trial?",
+          "answer": "After your trial ends, you'll be prompted to choose a plan. We offer monthly and annual billing. You'll only be charged after you actively select a plan — no surprise charges.",
+          "category": "general"
+        },
+        {
+          "id": 3,
+          "question": "Can I cancel my subscription anytime?",
+          "answer": "Yes, you can cancel your subscription at any time from your account settings. Your access continues until the end of your current billing period.",
+          "category": "billing"
+        },
+        {
+          "id": 4,
+          "question": "Do you offer a discount for annual plans?",
+          "answer": "Yes! Annual plans save you 20% compared to monthly billing. The discount is applied automatically when you select annual billing at checkout.",
+          "category": "billing"
+        },
+        {
+          "id": 5,
+          "question": "What integrations do you support?",
+          "answer": "We support 50+ integrations including Slack, GitHub, Jira, Figma, Notion, and more. Our REST API also lets you build custom integrations.",
+          "category": "technical"
+        }
+      ]
+    },
+    "categories": {
+      "type": "array",
+      "default": [
+        { "id": 1, "label": "General" },
+        { "id": 2, "label": "Billing" },
+        { "id": 3, "label": "Technical" }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

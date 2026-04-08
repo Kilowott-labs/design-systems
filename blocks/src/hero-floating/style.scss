@@ -1,0 +1,174 @@
+/**
+ * style.scss — hero-floating
+ * Only CSS that Tailwind cannot express. All colors via theme.json tokens where available.
+ *
+ * Colors NOT in theme.json (design-specific, used only in this block):
+ *   #09090B — zinc-950 hero background
+ *   #8B5CF6 — violet-500 mesh gradient, CTA gradient, logo icon
+ *   #6D28D9 — violet-700 CTA gradient end
+ *   #06B6D4 — cyan-500 mesh gradient glow
+ *   #A78BFA — violet-400 badge dot, icon purple
+ *   #22D3EE — cyan-400 icon cyan
+ *   #34D399 — emerald-400 icon green, trust badge icon
+ *   #FBBF24 — amber-400 icon yellow
+ */
+
+.wp-block-kw-package-hero-floating {
+
+	/* Section base — Tailwind cannot set min-height + flex column as a single section layout */
+	&.hero-floating-section {
+		min-height: 50rem;
+		display: flex;
+		flex-direction: column;
+		background-color: #09090b;
+	}
+
+	/* Light mode background override */
+	&.hero-floating-light {
+		background-color: var(--wp--preset--color--surface);
+	}
+
+	/* Hero body flex grow — Tailwind flex-1 in nested context needs SCSS to ensure fill */
+	.hero-floating-body {
+		flex: 1 1 0%;
+	}
+
+	/* Mesh gradient background — Tailwind cannot express multi-layered radial gradients */
+	&[data-color-mode="dark"]::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background:
+			radial-gradient(ellipse 60% 60% at 15% 60%, rgba(139, 92, 246, 0.3) 0%, transparent 100%),
+			radial-gradient(ellipse 50% 50% at 85% 30%, rgba(6, 182, 212, 0.2) 0%, transparent 100%),
+			radial-gradient(ellipse 140% 140% at 50% 40%, #18181b 0%, #09090b 100%);
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	/* Light mode subtle gradient */
+	&[data-color-mode="light"]::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		background:
+			radial-gradient(ellipse 60% 60% at 15% 60%, rgba(79, 70, 229, 0.06) 0%, transparent 100%),
+			radial-gradient(ellipse 50% 50% at 85% 30%, rgba(6, 182, 212, 0.04) 0%, transparent 100%);
+		pointer-events: none;
+		z-index: 0;
+	}
+
+	/* Primary CTA gradient + colored shadow — Tailwind cannot express both together with design-specific colors */
+	.hero-floating-primary-cta {
+		background: linear-gradient(180deg, #8b5cf6 0%, #6d28d9 100%);
+		box-shadow: 0 0.25rem 2.5rem rgba(139, 92, 246, 0.27);
+	}
+
+	/* Badge dot color — design uses #A78BFA which has no theme.json token */
+	.hero-floating-badge-dot {
+		background-color: #a78bfa;
+	}
+
+	.hero-floating-badge-dot-light {
+		background-color: var(--wp--preset--color--accent);
+	}
+
+	/* Icon colors — each card uses a distinct color not in theme.json */
+	.hero-floating-icon-purple {
+		color: #a78bfa;
+	}
+
+	.hero-floating-icon-cyan {
+		color: #22d3ee;
+	}
+
+	.hero-floating-icon-green {
+		color: #34d399;
+	}
+
+	.hero-floating-icon-yellow {
+		color: #fbbf24;
+	}
+
+	/* Light mode icon colors — use theme tokens where possible */
+	&[data-color-mode="light"] {
+
+		.hero-floating-icon-purple {
+			color: var(--wp--preset--color--accent);
+		}
+
+		.hero-floating-icon-cyan {
+			color: #0891b2;
+		}
+
+		.hero-floating-icon-green {
+			color: #059669;
+		}
+
+		.hero-floating-icon-yellow {
+			color: #d97706;
+		}
+	}
+
+	/* Glassmorphism backdrop blur on floating cards — Tailwind backdrop-blur works but the combination with rgba bg and border opacity is complex */
+	.hero-floating-card {
+		backdrop-filter: blur(1.25rem);
+		-webkit-backdrop-filter: blur(1.25rem);
+	}
+
+	/* Floating card positions — Tailwind cannot express specific absolute pixel positions from design */
+	.hero-floating-pos-left-top {
+		position: absolute;
+		left: 4.17%;
+		top: 35%;
+		z-index: 10;
+	}
+
+	.hero-floating-pos-right-top {
+		position: absolute;
+		right: 4.17%;
+		top: 30%;
+		z-index: 10;
+	}
+
+	.hero-floating-pos-left-bottom {
+		position: absolute;
+		left: 11.11%;
+		bottom: 10%;
+		z-index: 10;
+	}
+
+	.hero-floating-pos-right-bottom {
+		position: absolute;
+		right: 8.33%;
+		bottom: 7.5%;
+		z-index: 10;
+	}
+
+	/* Focus visible */
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid #8b5cf6;
+		outline-offset: 2px;
+		border-radius: 0.25rem;
+	}
+
+	/* Reduced motion — required for accessibility */
+	@media (prefers-reduced-motion: reduce) {
+
+		a,
+		button,
+		.hero-floating-card {
+			transition-duration: 0.01ms !important;
+		}
+	}
+
+	/* Responsive: card positions need reset on smaller screens */
+	@media (max-width: 1023px) {
+
+		/* Cards hidden via Tailwind lg:flex, but positions need reset */
+		.hero-floating-card {
+			position: static;
+		}
+	}
+}

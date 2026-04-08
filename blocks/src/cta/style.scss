@@ -1,0 +1,30 @@
+/**
+ * style.scss — cta
+ * Only CSS that Tailwind cannot express. All colors via theme.json tokens.
+ */
+
+.wp-block-kw-package-cta {
+
+	/* Newsletter form input — remove browser default styling on focus
+	 * Tailwind cannot target nested input pseudo-elements reliably in saved block markup */
+	[data-cta-form] input[type="email"] {
+		&:focus {
+			outline: none;
+			box-shadow: none;
+		}
+
+		/* Placeholder color for cross-browser consistency — Tailwind placeholder: prefix
+		 * does not work on static saved HTML without JIT scanning */
+		&::placeholder {
+			color: var(--wp--preset--color--foreground-subtle);
+			opacity: 1;
+		}
+	}
+
+	/* Submit button disabled state — Tailwind cannot express :disabled styling
+	 * in static block save markup */
+	[data-cta-form] button[type="submit"]:disabled {
+		opacity: 0.6;
+		cursor: not-allowed;
+	}
+}

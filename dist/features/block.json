@@ -1,0 +1,93 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/features",
+  "version": "1.0.0",
+  "title": "Features",
+  "category": "ytf",
+  "icon": "grid-view",
+  "description": "Versatile feature sections with 5 layout variants: icon grid, alternating image+text, bento grid, numbered steps, and feature cards.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Everything you need to ship faster"
+    },
+    "description": {
+      "type": "string",
+      "default": "Powerful features that help your team move from idea to production in record time."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "Features"
+    },
+    "style": {
+      "type": "string",
+      "default": "icon-grid",
+      "enum": ["icon-grid", "alternating", "bento", "steps", "cards"]
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "showItemLinks": {
+      "type": "boolean",
+      "default": false
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "icon": "zap",
+          "title": "Lightning Fast",
+          "description": "Sub-100ms response times with edge caching and optimized queries across all endpoints.",
+          "linkText": "Learn more",
+          "linkUrl": "#",
+          "image": "",
+          "imageId": 0
+        },
+        {
+          "id": 2,
+          "icon": "lock",
+          "title": "Enterprise Security",
+          "description": "SOC 2 Type II certified with end-to-end encryption, SSO, and granular role-based access controls.",
+          "linkText": "Learn more",
+          "linkUrl": "#",
+          "image": "",
+          "imageId": 0
+        },
+        {
+          "id": 3,
+          "icon": "git-merge",
+          "title": "Git-Native Workflows",
+          "description": "Seamless GitHub, GitLab, and Bitbucket integration with automatic branch tracking and PR linking.",
+          "linkText": "Learn more",
+          "linkUrl": "#",
+          "image": "",
+          "imageId": 0
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

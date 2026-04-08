@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Magazine Editorial — Design Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --wp--preset--color--surface-warm: #F5F0EB;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-muted: #6B7280;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--border-warm: #D4C4B8;
+      --wp--preset--color--terracotta: #b7423a;
+      --wp--preset--color--accent: #4F46E5;
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, sans-serif;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+    }
+    :focus-visible { outline: 2px solid var(--wp--preset--color--accent); outline-offset: 2px; border-radius: 2px; }
+    @media (prefers-reduced-motion: reduce) { *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    body::after { content: 'Desktop (1440px+)'; position: fixed; bottom: 8px; right: 12px; font-size: 11px; color: #999; pointer-events: none; }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px) { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-white">
+
+  <section class="bg-[var(--wp--preset--color--surface-warm)]" aria-labelledby="hero-magazine-heading">
+    <div class="flex flex-col lg:flex-row min-h-[40rem]">
+      <div class="lg:w-[45%] shrink-0">
+        <img src="https://images.unsplash.com/photo-1764768780666-2fbbd48e3ec8?w=1080" alt="Minimalist architectural interior with natural light" width="660" height="600" loading="eager" fetchpriority="high" decoding="async" class="w-full h-full object-cover rounded-[0.25rem]">
+      </div>
+      <div class="flex-1 flex flex-col justify-center gap-5 px-5 md:px-10 lg:px-12 py-10">
+        <div class="flex items-center gap-3">
+          <span class="bg-[var(--wp--preset--color--foreground)] text-[var(--wp--preset--color--white)] rounded-sm px-3 py-1 text-[0.625rem] font-bold tracking-[0.09375rem] font-[family-name:var(--wp--preset--font-family--inter)]">DESIGN</span>
+          <span class="text-[0.6875rem] font-semibold tracking-[0.09375rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">8 MIN READ</span>
+        </div>
+        <h2 id="hero-magazine-heading" class="text-[1.75rem] md:text-[2rem] lg:text-[2.5rem] font-normal tracking-tight leading-[1.2] text-[var(--wp--preset--color--foreground)]">
+          The Architecture of Silence: How Minimalism Is Reshaping Urban Living
+        </h2>
+        <p class="text-[0.9375rem] leading-[1.7] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[30rem]">
+          In an era of sensory overload, a new generation of architects is designing buildings that prioritize stillness, natural light, and the radical beauty of empty space.
+        </p>
+        <div class="flex items-center gap-3 mt-2">
+          <img src="https://images.unsplash.com/photo-1678801868964-de6a28d4ff19?w=100" alt="Elena Vasquez" width="36" height="36" loading="lazy" decoding="async" class="w-9 h-9 rounded-full object-cover">
+          <div class="flex flex-col gap-0.5">
+            <span class="text-[0.8125rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">Elena Vasquez</span>
+            <span class="text-xs text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">April 2, 2026</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-[var(--wp--preset--color--white)] border-t border-[var(--wp--preset--color--border-warm)] flex items-center gap-8 px-5 md:px-10 lg:px-[5.625rem] h-[3.75rem]">
+      <span class="text-[0.625rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--terracotta)] font-[family-name:var(--wp--preset--font-family--inter)]">TRENDING</span>
+      <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">01&ensp;The Rise of Bio-Architecture</span>
+      <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">02&ensp;Why Gen Z Is Leaving Social Media</span>
+      <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">03&ensp;Inside Apple's Secret Design Lab</span>
+    </div>
+  </section>
+
+</body>
+</html>

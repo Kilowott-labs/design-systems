@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comparison Table — Design Preview</title>
+
+  <!-- Tailwind CDN — required for preview rendering -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- theme.json CSS custom properties -->
+  <style>
+    :root {
+      /* Colors */
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-muted: #6B7280;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--surface: #FAFAFA;
+      --wp--preset--color--border: #E5E7EB;
+      --wp--preset--color--accent: #4F46E5;
+      --wp--preset--color--accent-light: #818CF8;
+      --wp--preset--color--accent-surface: #EEF2FF;
+      --wp--preset--color--forest-green: #2e6b3f;
+      --wp--preset--color--grey-light: #d6d6d6;
+      --wp--preset--color--background-dark: #0F172A;
+      --wp--preset--color--foreground-on-dark: #E2E8F0;
+      --wp--preset--color--muted-on-dark: #94A3B8;
+      --wp--preset--color--surface-dark: #1E293B;
+      --wp--preset--color--border-dark: #1E293B;
+
+      /* Font families */
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--wp--preset--color--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Responsive preview helper */
+    body::after {
+      content: 'Desktop (1440px+)';
+      position: fixed;
+      bottom: 8px;
+      right: 12px;
+      font-size: 11px;
+      color: #999;
+      pointer-events: none;
+    }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px)  { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white">
+
+  <!-- BLOCK CONTENT STARTS HERE -->
+  <section
+    class="bg-[var(--wp--preset--color--white)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]"
+    aria-labelledby="comparison-heading"
+    data-color-mode="light"
+  >
+    <div class="max-w-[75rem] mx-auto">
+
+      <!-- Header -->
+      <header class="flex flex-col items-center text-center gap-[0.75rem] mb-[2.5rem]">
+        <h2
+          id="comparison-heading"
+          class="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-bold tracking-tight text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight"
+        >
+          Why teams switch to us
+        </h2>
+        <p class="text-[0.9375rem] md:text-[1rem] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[35rem] leading-relaxed">
+          See how we compare to legacy tools.
+        </p>
+      </header>
+
+      <!-- Comparison Table -->
+      <div class="overflow-x-auto -mx-[1.25rem] px-[1.25rem] md:mx-0 md:px-0">
+        <table class="w-full border-collapse rounded-[0.75rem] border border-[var(--wp--preset--color--border)] overflow-hidden font-[family-name:var(--wp--preset--font-family--inter)]" style="min-width: 600px;">
+          <thead>
+            <tr class="bg-[var(--wp--preset--color--surface)]">
+              <th scope="col" class="text-left px-[1.5rem] py-[0.875rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--foreground)] border-b border-[var(--wp--preset--color--border)]">
+                Feature
+              </th>
+              <th scope="col" class="text-center px-[1.5rem] py-[0.875rem] text-[0.8125rem] font-bold text-[var(--wp--preset--color--accent)] border-b border-[var(--wp--preset--color--border)]" style="width: 11.25rem;">
+                FlowStack
+              </th>
+              <th scope="col" class="text-center px-[1.5rem] py-[0.875rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--foreground-muted)] border-b border-[var(--wp--preset--color--border)]" style="width: 11.25rem;">
+                Jira
+              </th>
+              <th scope="col" class="text-center px-[1.5rem] py-[0.875rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--foreground-muted)] border-b border-[var(--wp--preset--color--border)]" style="width: 11.25rem;">
+                Asana
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Row 1: text values -->
+            <tr class="border-b border-[var(--wp--preset--color--surface)]">
+              <td class="px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground)]">Setup time</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem] text-[0.875rem] font-semibold text-[var(--wp--preset--color--foreground)]">5 minutes</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground-subtle)]">2-4 weeks</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground-subtle)]">1-2 weeks</td>
+            </tr>
+            <!-- Row 2: check / x / x -->
+            <tr class="border-b border-[var(--wp--preset--color--surface)]">
+              <td class="px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground)]">AI-powered insights</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--forest-green)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Not included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--grey-light)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Not included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--grey-light)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </td>
+            </tr>
+            <!-- Row 3: check / check / check -->
+            <tr class="border-b border-[var(--wp--preset--color--surface)]">
+              <td class="px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground)]">Real-time collaboration</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--forest-green)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--forest-green)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--forest-green)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </td>
+            </tr>
+            <!-- Row 4: check / minus / x -->
+            <tr class="border-b border-[var(--wp--preset--color--surface)]">
+              <td class="px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground)]">Git-native workflows</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--forest-green)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              </td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Partial" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--grey-light)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </td>
+              <td class="text-center px-[1.5rem] py-[0.875rem]">
+                <svg aria-label="Not included" class="inline-block w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--grey-light)]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </td>
+            </tr>
+            <!-- Row 5: text values -->
+            <tr>
+              <td class="px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground)]">Free tier available</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem] text-[0.875rem] font-semibold text-[var(--wp--preset--color--foreground)]">Up to 10 users</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground-subtle)]">No</td>
+              <td class="text-center px-[1.5rem] py-[0.875rem] text-[0.875rem] text-[var(--wp--preset--color--foreground-subtle)]">Limited</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </section>
+  <!-- BLOCK CONTENT ENDS HERE -->
+
+</body>
+</html>

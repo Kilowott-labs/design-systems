@@ -1,0 +1,62 @@
+/**
+ * style.scss — comparison-table
+ * Only CSS that Tailwind cannot express. All colors via theme.json tokens.
+ */
+
+.wp-block-kw-package-comparison-table {
+
+	/* Tailwind border-collapse + border-radius do not play well together.
+	   This ensures the table wrapper clips children to the rounded corners. */
+	table {
+		border-spacing: 0;
+	}
+
+	/* First and last header cells need rounded top corners
+	   since border-collapse removes border-radius on cells */
+	thead tr th:first-child {
+		border-top-left-radius: 0.75rem;
+	}
+
+	thead tr th:last-child {
+		border-top-right-radius: 0.75rem;
+	}
+
+	/* Last row cells need rounded bottom corners */
+	tbody tr:last-child td:first-child {
+		border-bottom-left-radius: 0.75rem;
+	}
+
+	tbody tr:last-child td:last-child {
+		border-bottom-right-radius: 0.75rem;
+	}
+
+	/* Horizontal scroll shadow hint on mobile — uses pseudo-element */
+	.comparison-table-scroll {
+		position: relative;
+	}
+
+	.comparison-table-scroll::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 2rem;
+		background: linear-gradient(to right, transparent, var(--wp--preset--color--white, #fff));
+		pointer-events: none;
+		opacity: 0;
+		transition: opacity 0.2s ease;
+	}
+
+	/* Only show the scroll hint when content is scrollable */
+	@media (max-width: 640px) {
+		.comparison-table-scroll::after {
+			opacity: 1;
+		}
+	}
+
+	/* Dark mode: adjust scroll hint gradient */
+	&[data-color-mode="dark"] .comparison-table-scroll::after {
+		background: linear-gradient(to right, transparent, var(--wp--preset--color--background-dark));
+	}
+}

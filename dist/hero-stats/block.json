@@ -1,0 +1,66 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/hero-stats",
+  "version": "1.0.0",
+  "title": "Hero Stats",
+  "category": "ytf",
+  "icon": "chart-line",
+  "description": "Finance/corporate hero with split layout: text column on left and vertical stats column on right, with serif typography and trust-building numbers.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "tagline": {
+      "type": "string",
+      "default": "WEALTH MANAGEMENT \u00b7 EST. 1987"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Building legacies through disciplined investing"
+    },
+    "subheading": {
+      "type": "string",
+      "default": "For over three decades, Meridian has helped families and institutions preserve and grow wealth through evidence-based strategies and personal service."
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "default": "Schedule a Call"
+    },
+    "primaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "default": "Our Approach"
+    },
+    "secondaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showSecondaryCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "stats": {
+      "type": "array",
+      "default": [
+        { "id": 1, "value": "$12.8B", "label": "Assets under management" },
+        { "id": 2, "value": "97%", "label": "Client retention rate over 10 years" },
+        { "id": 3, "value": "850+", "label": "Families and institutions served" },
+        { "id": 4, "value": "36 yrs", "label": "Of consistent, above-benchmark returns" }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": { "padding": true, "margin": true }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

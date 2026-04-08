@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Testimonial — Design Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --wp--preset--color--surface: #FAFAFA;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--background-dark: #0F172A;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--border: #E5E7EB;
+      --wp--preset--color--grey-light: #d6d6d6;
+      --wp--preset--color--royal-blue: #3f6cb5;
+      --wp--preset--color--accent: #4F46E5;
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, sans-serif;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+    }
+    :focus-visible { outline: 2px solid var(--wp--preset--color--royal-blue); outline-offset: 2px; border-radius: 2px; }
+    @media (prefers-reduced-motion: reduce) { *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    body::after { content: 'Desktop (1440px+)'; position: fixed; bottom: 8px; right: 12px; font-size: 11px; color: #999; pointer-events: none; }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px) { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-white">
+
+  <section class="bg-[var(--wp--preset--color--surface)]" aria-labelledby="hero-testimonial-heading">
+    <div class="flex flex-col items-center gap-10 px-5 md:px-10 lg:px-[5.625rem] py-10 md:py-14">
+      <blockquote class="flex flex-col items-center gap-6 max-w-[53.75rem]">
+        <span class="text-[5rem] leading-[0.5] text-[var(--wp--preset--color--royal-blue)] select-none" aria-hidden="true">&ldquo;</span>
+        <p id="hero-testimonial-heading" class="text-[1.5rem] md:text-[1.75rem] lg:text-[2rem] font-normal tracking-tight leading-[1.35] text-center text-[var(--wp--preset--color--background-dark)]">
+          Catalyst transformed how our 2,000-person engineering team ships software. We went from quarterly releases to weekly — with fewer bugs and happier developers.
+        </p>
+        <footer class="flex items-center gap-3.5">
+          <img src="https://images.unsplash.com/photo-1620837759314-fda7fc55e31e?w=100" alt="Marcus Chen" width="44" height="44" loading="lazy" decoding="async" class="w-11 h-11 rounded-full object-cover">
+          <div class="flex flex-col gap-0.5">
+            <cite class="not-italic text-sm font-semibold text-[var(--wp--preset--color--background-dark)] font-[family-name:var(--wp--preset--font-family--inter)]">Marcus Chen, VP of Engineering</cite>
+            <span class="text-[0.8125rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Dataflow Inc. &middot; $2.4B Series D</span>
+          </div>
+        </footer>
+      </blockquote>
+
+      <ul class="flex items-center gap-12 list-none p-0 m-0">
+        <li class="flex flex-col items-center gap-0.5">
+          <span class="text-[2rem] md:text-[2.25rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--royal-blue)]">4x</span>
+          <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">faster releases</span>
+        </li>
+        <li class="flex items-center gap-12">
+          <span class="w-px h-10 bg-[var(--wp--preset--color--border)]" aria-hidden="true"></span>
+          <div class="flex flex-col items-center gap-0.5">
+            <span class="text-[2rem] md:text-[2.25rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--royal-blue)]">67%</span>
+            <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">fewer incidents</span>
+          </div>
+        </li>
+        <li class="flex items-center gap-12">
+          <span class="w-px h-10 bg-[var(--wp--preset--color--border)]" aria-hidden="true"></span>
+          <div class="flex flex-col items-center gap-0.5">
+            <span class="text-[2rem] md:text-[2.25rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--royal-blue)]">92</span>
+            <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">NPS score</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="flex items-center gap-3">
+        <a href="#" class="inline-flex items-center rounded-lg bg-[var(--wp--preset--color--royal-blue)] text-[var(--wp--preset--color--white)] px-8 py-3.5 text-[0.9375rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--inter)] transition-opacity duration-200 hover:opacity-90">See Customer Stories</a>
+        <a href="#" class="inline-flex items-center rounded-lg border border-[var(--wp--preset--color--grey-light)] text-[var(--wp--preset--color--background-dark)] px-8 py-3.5 text-[0.9375rem] font-semibold tracking-tight font-[family-name:var(--wp--preset--font-family--inter)] transition-opacity duration-200 hover:opacity-80">Request Demo</a>
+      </div>
+    </div>
+
+    <div class="border-t border-[var(--wp--preset--color--border)] flex items-center justify-center gap-14 h-16 px-5 md:px-[5.625rem]">
+      <span class="text-[0.625rem] font-semibold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--inter)]">TRUSTED BY</span>
+      <span class="text-base font-bold tracking-[0.09375rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">DATAFLOW</span>
+      <span class="text-base font-bold tracking-[0.09375rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">SCALE AI</span>
+      <span class="text-base font-bold tracking-[0.09375rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">PLAID</span>
+      <span class="text-base font-bold tracking-[0.09375rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">RAMP</span>
+      <span class="text-base font-bold tracking-[0.09375rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">BREX</span>
+    </div>
+  </section>
+
+</body>
+</html>

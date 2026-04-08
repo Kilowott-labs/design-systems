@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section — Design Preview</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts for preview -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- theme.json CSS custom properties -->
+  <style>
+    :root {
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-muted: #6B7280;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--surface: #FAFAFA;
+      --wp--preset--color--surface-warm: #F5F0EB;
+      --wp--preset--color--background-dark: #0F172A;
+      --wp--preset--color--border: #E5E7EB;
+      --wp--preset--color--border-warm: #D4C4B8;
+      --wp--preset--color--border-dark: #1E293B;
+      --wp--preset--color--accent: #4F46E5;
+      --wp--preset--color--accent-light: #818CF8;
+      --wp--preset--color--accent-surface: #EEF2FF;
+      --wp--preset--color--foreground-on-dark: #E2E8F0;
+      --wp--preset--color--muted-on-dark: #94A3B8;
+      --wp--preset--color--surface-dark: #1E293B;
+
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+
+      --wp--preset--font-size--h1: 3.5rem;
+      --wp--preset--font-size--h2: 2.5rem;
+      --wp--preset--font-size--h3: 2rem;
+      --wp--preset--font-size--h4: 1.5rem;
+      --wp--preset--font-size--body: 1.125rem;
+      --wp--preset--font-size--small: 0.875rem;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--wp--preset--color--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    body::after {
+      content: 'Desktop (1440px+)';
+      position: fixed;
+      bottom: 8px;
+      right: 12px;
+      font-size: 11px;
+      color: #999;
+      pointer-events: none;
+    }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px)  { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-[var(--wp--preset--color--white)]">
+
+  <!-- BLOCK CONTENT STARTS HERE -->
+  <!--
+    Hero Section Block — Default variant: "split" / colorMode: "light"
+    style: split | fullbleed | centered | textonly | saas | dark
+    colorMode: light | dark
+  -->
+  <section
+    class="bg-[var(--wp--preset--color--surface-warm)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]"
+    aria-labelledby="hero-heading"
+    data-hero-section
+    data-style="split"
+    data-color-mode="light"
+  >
+    <div class="max-w-[80rem] mx-auto flex flex-col lg:flex-row items-center gap-[2rem] lg:gap-[3.5rem]">
+      <!-- Text Column -->
+      <div class="flex-1 flex flex-col gap-[1.75rem]">
+        <!-- Badge -->
+        <span class="inline-flex items-center self-start rounded-full px-[1rem] py-[0.375rem] text-[0.75rem] font-semibold tracking-wider font-[family-name:var(--wp--preset--font-family--inter)] bg-[var(--wp--preset--color--accent-surface)] text-[var(--wp--preset--color--accent)]">
+          New Collection 2026
+        </span>
+
+        <h2
+          id="hero-heading"
+          class="text-[2rem] md:text-[2.75rem] lg:text-[3.5rem] font-bold tracking-tight leading-[1.1] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]"
+        >
+          Discover Timeless Elegance for Every Occasion
+        </h2>
+
+        <p class="text-[1rem] md:text-[1.0625rem] leading-[1.65] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[28rem]">
+          Curated collections that blend modern design with lasting quality. Free shipping on orders over $50.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap items-center gap-[1rem]">
+          <a
+            href="#"
+            class="inline-flex items-center gap-[0.5rem] rounded-[0.625rem] px-[1.75rem] py-[0.875rem] text-[0.9375rem] font-semibold font-[family-name:var(--wp--preset--font-family--inter)] bg-[var(--wp--preset--color--foreground)] text-[var(--wp--preset--color--white)] transition-opacity duration-200 hover:opacity-80"
+          >
+            Shop Now
+            <svg class="w-[1rem] h-[1rem]" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a
+            href="#"
+            class="inline-flex items-center gap-[0.5rem] rounded-[0.625rem] px-[1.75rem] py-[0.875rem] text-[0.9375rem] font-semibold font-[family-name:var(--wp--preset--font-family--inter)] border border-[var(--wp--preset--color--border)] text-[var(--wp--preset--color--foreground-muted)] transition-opacity duration-200 hover:opacity-80"
+          >
+            Learn More
+          </a>
+        </div>
+
+        <!-- Trust Bar -->
+        <div class="flex flex-wrap items-center gap-[1.5rem] pt-[0.5rem]">
+          <span class="text-[0.6875rem] font-semibold tracking-widest text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">TRUSTED BY</span>
+          <span class="text-[1rem] font-bold tracking-widest text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">VOGUE</span>
+          <span class="text-[1rem] font-bold tracking-widest text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">ELLE</span>
+          <span class="text-[1rem] font-bold tracking-widest text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">GQ</span>
+        </div>
+      </div>
+
+      <!-- Image Column -->
+      <div class="flex-1 w-full max-w-[35rem]">
+        <img
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=620&fit=crop"
+          alt="Curated fashion collection displayed on wooden shelves"
+          width="800"
+          height="620"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+          class="w-full h-auto rounded-[1.25rem] object-cover"
+        >
+      </div>
+    </div>
+  </section>
+  <!-- BLOCK CONTENT ENDS HERE -->
+
+</body>
+</html>

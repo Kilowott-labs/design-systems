@@ -1,0 +1,154 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/social-proof",
+  "version": "1.0.0",
+  "title": "Social Proof",
+  "category": "ytf",
+  "icon": "star-filled",
+  "description": "Social proof section with five style variants: logo ticker, testimonial cards, stats counter, review highlights, and case study preview.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "style": {
+      "type": "string",
+      "default": "testimonials",
+      "enum": ["logo-ticker", "testimonials", "stats", "reviews", "case-studies"]
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "heading": {
+      "type": "string",
+      "default": "What our customers say"
+    },
+    "description": {
+      "type": "string",
+      "default": "Don't just take our word for it — hear from the teams using us daily."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "TRUSTED BY 10,000+ TEAMS"
+    },
+    "overlineText": {
+      "type": "string",
+      "default": "CUSTOMER STORIES"
+    },
+    "ratingValue": {
+      "type": "string",
+      "default": "4.9 out of 5"
+    },
+    "reviewCount": {
+      "type": "string",
+      "default": "2,847 reviews"
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "View all stories"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "logos": {
+      "type": "array",
+      "default": [
+        { "id": 1, "name": "STRIPE" },
+        { "id": 2, "name": "VERCEL" },
+        { "id": 3, "name": "LINEAR" },
+        { "id": 4, "name": "NOTION" },
+        { "id": 5, "name": "FIGMA" },
+        { "id": 6, "name": "RAMP" },
+        { "id": 7, "name": "PLAID" }
+      ]
+    },
+    "testimonials": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "quote": "FlowStack cut our sprint planning time in half. The AI suggestions are genuinely useful — not just noise.",
+          "authorName": "Sarah Kim",
+          "authorRole": "Head of Product, Loom",
+          "avatarUrl": "https://images.unsplash.com/photo-1716237443030-b1ddf1e2176c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ3OTR8&ixlib=rb-4.1.0&q=80&w=1080",
+          "avatarId": 0
+        },
+        {
+          "id": 2,
+          "quote": "We migrated from three different tools to FlowStack. The unified view alone saved us 10+ hours per week across the team.",
+          "authorName": "James Chen",
+          "authorRole": "CTO, ScaleOps",
+          "avatarUrl": "https://images.unsplash.com/photo-1771050889377-b68415885c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+          "avatarId": 0
+        },
+        {
+          "id": 3,
+          "quote": "The developer experience is exceptional. Our engineers actually enjoy using it, which is rare for project management tools.",
+          "authorName": "Maria Lopez",
+          "authorRole": "VP Engineering, Stripe",
+          "avatarUrl": "https://images.unsplash.com/photo-1700248356502-ca48ae3bafd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4MDZ8&ixlib=rb-4.1.0&q=80&w=1080",
+          "avatarId": 0
+        }
+      ]
+    },
+    "stats": {
+      "type": "array",
+      "default": [
+        { "id": 1, "value": "10,000+", "label": "Teams worldwide" },
+        { "id": 2, "value": "99.9%", "label": "Uptime guarantee" },
+        { "id": 3, "value": "4.9/5", "label": "Average rating on G2" },
+        { "id": 4, "value": "2M+", "label": "Tasks completed daily" }
+      ]
+    },
+    "reviews": {
+      "type": "array",
+      "default": [
+        { "id": 1, "quote": "Best dev tool investment we've made this year. Setup took 15 minutes and we were productive on day one.", "authorName": "Alex T.", "source": "via G2" },
+        { "id": 2, "quote": "The integrations are seamless. Slack, GitHub, Figma — everything just works without configuration.", "authorName": "Priya R.", "source": "via Product Hunt" },
+        { "id": 3, "quote": "Finally a tool that engineers and PMs both love. The roadmap view is incredibly well-designed.", "authorName": "Marcus D.", "source": "via Capterra" },
+        { "id": 4, "quote": "Support response time is unreal. Had a complex issue resolved in under 2 hours on a Sunday.", "authorName": "Lisa W.", "source": "via Twitter" }
+      ]
+    },
+    "caseStudies": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "company": "DATAFLOW INC.",
+          "title": "How Dataflow reduced deployment time by 73%",
+          "pullQuote": "The platform paid for itself in the first month.",
+          "linkText": "Read case study",
+          "linkUrl": "#",
+          "imageUrl": "https://images.unsplash.com/photo-1758873272414-c0bf30332738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4ODN8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0
+        },
+        {
+          "id": 2,
+          "company": "SCALE AI",
+          "title": "Scaling from 50 to 500 engineers without losing velocity",
+          "pullQuote": "Our onboarding time dropped from 3 weeks to 3 days.",
+          "linkText": "Read case study",
+          "linkUrl": "#",
+          "imageUrl": "https://images.unsplash.com/photo-1758598307153-f1c53d9db23e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4OTl8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

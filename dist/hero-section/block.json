@@ -1,0 +1,128 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/hero-section",
+  "version": "1.0.0",
+  "title": "Hero Section",
+  "category": "ytf",
+  "icon": "cover-image",
+  "description": "Versatile hero section with 6 style variants (split, fullbleed, centered, text-only, SaaS, dark), light/dark color modes, optional badge, dual CTAs, trust bar, and hero image.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Discover Timeless Elegance for Every Occasion"
+    },
+    "subheading": {
+      "type": "string",
+      "default": "Curated collections that blend modern design with lasting quality. Free shipping on orders over $50."
+    },
+    "style": {
+      "type": "string",
+      "default": "split",
+      "enum": ["split", "fullbleed", "centered", "textonly", "saas", "dark"]
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "New Collection 2026"
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "default": "Shop Now"
+    },
+    "primaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showSecondaryCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "secondaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showTrustBar": {
+      "type": "boolean",
+      "default": true
+    },
+    "trustLabel": {
+      "type": "string",
+      "default": "TRUSTED BY"
+    },
+    "trustItems": {
+      "type": "array",
+      "default": [
+        { "id": 1, "label": "VOGUE" },
+        { "id": 2, "label": "ELLE" },
+        { "id": 3, "label": "GQ" },
+        { "id": 4, "label": "HARPER'S" }
+      ]
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageAlt": {
+      "type": "string",
+      "default": "Hero image"
+    },
+    "showStatsBar": {
+      "type": "boolean",
+      "default": false
+    },
+    "stats": {
+      "type": "array",
+      "default": [
+        { "id": 1, "value": "$4.2B+", "label": "Processed annually" },
+        { "id": 2, "value": "99.99%", "label": "Uptime SLA" },
+        { "id": 3, "value": "180+", "label": "Countries supported" },
+        { "id": 4, "value": "<50ms", "label": "Avg response time" }
+      ]
+    },
+    "emailPlaceholder": {
+      "type": "string",
+      "default": "Enter your work email"
+    },
+    "emailButtonText": {
+      "type": "string",
+      "default": "Get Started Free"
+    },
+    "proofItems": {
+      "type": "array",
+      "default": [
+        { "id": 1, "label": "No credit card required" },
+        { "id": 2, "label": "Free for up to 10 users" },
+        { "id": 3, "label": "Cancel anytime" }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

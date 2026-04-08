@@ -1,0 +1,31 @@
+/**
+ * style.scss — site-footer
+ * Only CSS that Tailwind cannot express. All colors via theme.json tokens.
+ */
+
+.wp-block-kw-package-site-footer {
+
+	/* wp_nav_menu outputs li > a — Tailwind cannot target nested menu walker output */
+	nav ul li a {
+		text-decoration: none;
+		transition: color 200ms ease;
+	}
+
+	/* Minimal variant: horizontal links need inline display — walker outputs block li */
+	&[data-style="minimal"] nav ul li,
+	&[data-style="app-download"] nav ul li {
+		display: inline;
+	}
+
+	/* items_wrap heading: first child of nav container is the column title */
+	nav > h3 {
+		margin: 0 0 0.25rem 0;
+	}
+
+	/* Newsletter form focus ring — Tailwind cannot target :focus-within on a wrapper */
+	form[data-site-footer-newsletter]:focus-within {
+		outline: 2px solid var(--wp--preset--color--accent);
+		outline-offset: 2px;
+		border-radius: 0.5rem;
+	}
+}

@@ -1,0 +1,86 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/comparison-table",
+  "version": "1.0.0",
+  "title": "Comparison Table",
+  "category": "ytf",
+  "icon": "editor-table",
+  "description": "Feature comparison table with check/cross/text cells, highlighted column support, and light/dark color modes.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Why teams switch to us"
+    },
+    "description": {
+      "type": "string",
+      "default": "See how we compare to legacy tools."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": false
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "Compare"
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "plans": {
+      "type": "array",
+      "default": [
+        { "id": 1, "name": "FlowStack", "highlighted": true },
+        { "id": 2, "name": "Jira", "highlighted": false },
+        { "id": 3, "name": "Asana", "highlighted": false }
+      ]
+    },
+    "features": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "name": "Setup time",
+          "values": ["5 minutes", "2-4 weeks", "1-2 weeks"]
+        },
+        {
+          "id": 2,
+          "name": "AI-powered insights",
+          "values": ["check", "cross", "cross"]
+        },
+        {
+          "id": 3,
+          "name": "Real-time collaboration",
+          "values": ["check", "check", "check"]
+        },
+        {
+          "id": 4,
+          "name": "Git-native workflows",
+          "values": ["check", "partial", "cross"]
+        },
+        {
+          "id": 5,
+          "name": "Free tier available",
+          "values": ["Up to 10 users", "No", "Limited"]
+        }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

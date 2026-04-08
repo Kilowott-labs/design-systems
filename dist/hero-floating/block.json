@@ -1,0 +1,78 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/hero-floating",
+  "version": "1.0.0",
+  "title": "Hero Floating Cards",
+  "category": "ytf",
+  "icon": "screenoptions",
+  "description": "Dark AI product hero with centered text and absolutely-positioned floating feature cards with glassmorphism effect.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "colorMode": {
+      "type": "string",
+      "default": "dark",
+      "enum": ["light", "dark"]
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "Introducing Lumina v3"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Intelligence that\nunderstands your world"
+    },
+    "subheading": {
+      "type": "string",
+      "default": "From natural language to actionable insights. Lumina processes, reasons, and creates — so your team can focus on what matters."
+    },
+    "showTrustBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "trustBadgeText": {
+      "type": "string",
+      "default": "SOC 2 Compliant"
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "default": "Start Creating"
+    },
+    "primaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "default": "See it in action"
+    },
+    "secondaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showSecondaryCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "floatingCards": {
+      "type": "array",
+      "default": [
+        { "id": 1, "icon": "file-text", "iconColor": "purple", "title": "Document Analysis", "description": "Extract insights from 1000+ docs in seconds", "position": "left-top" },
+        { "id": 2, "icon": "message-square", "iconColor": "cyan", "title": "Natural Language", "description": "Ask anything in plain English, get structured answers", "position": "right-top" },
+        { "id": 3, "icon": "shield", "iconColor": "green", "title": "SOC 2 Compliant", "description": "", "position": "left-bottom" },
+        { "id": 4, "icon": "zap", "iconColor": "yellow", "title": "<200ms latency", "description": "", "position": "right-bottom" }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": { "padding": true, "margin": true }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

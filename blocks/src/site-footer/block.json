@@ -1,0 +1,102 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/site-footer",
+  "version": "1.0.0",
+  "title": "Site Footer",
+  "category": "ytf",
+  "icon": "minus",
+  "description": "Dynamic FSE site footer with WordPress native navigation menus. Supports five style variants (multi-column, minimal, dark, newsletter, app-download), light/dark color modes, social links, newsletter signup, and app download buttons. Menu items managed via Appearance > Menus.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "style": {
+      "type": "string",
+      "default": "multi-column",
+      "enum": ["multi-column", "minimal", "dark", "newsletter", "app-download"]
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "logoText": {
+      "type": "string",
+      "default": "FlowStack"
+    },
+    "logoShowIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "tagline": {
+      "type": "string",
+      "default": "The modern platform for product teams. Plan, track, and ship software with less friction."
+    },
+    "copyrightText": {
+      "type": "string",
+      "default": "\u00a9 2026 FlowStack, Inc. All rights reserved."
+    },
+    "copyrightExtra": {
+      "type": "string",
+      "default": "Made with care in San Francisco"
+    },
+    "showSocials": {
+      "type": "boolean",
+      "default": true
+    },
+    "socialLinks": {
+      "type": "array",
+      "default": [
+        { "icon": "twitter", "url": "#", "label": "Twitter" },
+        { "icon": "github", "url": "#", "label": "GitHub" },
+        { "icon": "linkedin", "url": "#", "label": "LinkedIn" }
+      ]
+    },
+    "showNewsletter": {
+      "type": "boolean",
+      "default": false
+    },
+    "newsletterHeading": {
+      "type": "string",
+      "default": "Get design inspiration and industry insights delivered to your inbox every week."
+    },
+    "newsletterButtonText": {
+      "type": "string",
+      "default": "Subscribe"
+    },
+    "showAppDownload": {
+      "type": "boolean",
+      "default": false
+    },
+    "appHeading": {
+      "type": "string",
+      "default": "Take your workflow anywhere"
+    },
+    "appDescription": {
+      "type": "string",
+      "default": "Download the mobile app and stay productive on the go. Available on iOS and Android."
+    },
+    "appStoreUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "playStoreUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showBottomLinks": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "style": "file:./style-index.css"
+}

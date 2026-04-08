@@ -1,0 +1,157 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/gallery",
+  "version": "1.0.0",
+  "title": "Gallery",
+  "category": "ytf",
+  "icon": "format-gallery",
+  "description": "Portfolio gallery with five style variants — masonry grid, uniform cards, featured + grid, dark showcase, and filterable portfolio with category tabs.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "default": "Our Work"
+    },
+    "description": {
+      "type": "string",
+      "default": "A curated selection of projects we're most proud of — from branding to digital experiences."
+    },
+    "showDescription": {
+      "type": "boolean",
+      "default": true
+    },
+    "style": {
+      "type": "string",
+      "default": "masonry",
+      "enum": ["masonry", "cards", "featured", "showcase", "portfolio"]
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": false
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "PORTFOLIO"
+    },
+    "showViewAll": {
+      "type": "boolean",
+      "default": false
+    },
+    "viewAllText": {
+      "type": "string",
+      "default": "View All"
+    },
+    "viewAllUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showTabs": {
+      "type": "boolean",
+      "default": false
+    },
+    "items": {
+      "type": "array",
+      "default": [
+        {
+          "id": 1,
+          "image": "https://images.unsplash.com/photo-1558655146-d09347e92766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0,
+          "alt": "Vibrant gradient abstract design for Meridian brand identity",
+          "title": "Meridian Brand Identity",
+          "category": "branding",
+          "description": "A modern brand identity system with vibrant gradients and bold typography.",
+          "tag": "Branding",
+          "year": "2026",
+          "link": "#"
+        },
+        {
+          "id": 2,
+          "image": "https://images.unsplash.com/photo-1551650975-87deedd944c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0,
+          "alt": "Mobile app interface with clean dashboard for Pulse project",
+          "title": "Pulse Dashboard",
+          "category": "web-design",
+          "description": "End-to-end design and development of a project management tool for distributed teams.",
+          "tag": "UI Design",
+          "year": "2025",
+          "link": "#"
+        },
+        {
+          "id": 3,
+          "image": "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0,
+          "alt": "Modern landing page layout for Aqua web design project",
+          "title": "Aqua Landing Page",
+          "category": "web-design",
+          "description": "Complete visual identity system including logo, typography, color palette, and brand guidelines.",
+          "tag": "Web Design",
+          "year": "2026",
+          "link": "#"
+        },
+        {
+          "id": 4,
+          "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0,
+          "alt": "Verde mobile app redesign with green accent theme",
+          "title": "Verde App Redesign",
+          "category": "mobile",
+          "description": "A modern mobile banking experience with biometric auth and real-time analytics.",
+          "tag": "Mobile App",
+          "year": "2025",
+          "link": "#"
+        },
+        {
+          "id": 5,
+          "image": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0,
+          "alt": "Solstice marketing campaign with bold visual approach",
+          "title": "Solstice Campaign",
+          "category": "branding",
+          "description": "Next-generation mapping and navigation for autonomous vehicles.",
+          "tag": "Marketing",
+          "year": "2026",
+          "link": "#"
+        },
+        {
+          "id": 6,
+          "image": "https://images.unsplash.com/photo-1523726491678-bf852e717f6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080",
+          "imageId": 0,
+          "alt": "Amethyst e-commerce platform with product showcase",
+          "title": "Amethyst E-commerce",
+          "category": "product",
+          "description": "Immersive music streaming experience with spatial audio visualization.",
+          "tag": "E-commerce",
+          "year": "2025",
+          "link": "#"
+        }
+      ]
+    },
+    "categories": {
+      "type": "array",
+      "default": [
+        { "id": 1, "label": "All Work", "slug": "all" },
+        { "id": 2, "label": "Branding", "slug": "branding" },
+        { "id": 3, "label": "Web Design", "slug": "web-design" },
+        { "id": 4, "label": "Mobile", "slug": "mobile" },
+        { "id": 5, "label": "Product", "slug": "product" }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

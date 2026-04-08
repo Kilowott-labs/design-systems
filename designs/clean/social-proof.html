@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Proof — Design Preview</title>
+
+  <!-- Tailwind CDN — required for preview rendering -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Schema.org for Reviews -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "FlowStack",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "2847",
+      "bestRating": "5"
+    },
+    "review": [
+      {
+        "@type": "Review",
+        "reviewBody": "FlowStack cut our sprint planning time in half. The AI suggestions are genuinely useful — not just noise.",
+        "author": { "@type": "Person", "name": "Sarah Kim" }
+      },
+      {
+        "@type": "Review",
+        "reviewBody": "Best dev tool investment we've made this year. Setup took 15 minutes and we were productive on day one.",
+        "author": { "@type": "Person", "name": "Alex T." }
+      }
+    ]
+  }
+  </script>
+
+  <!-- theme.json CSS custom properties -->
+  <style>
+    :root {
+      /* Colors */
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-muted: #6B7280;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--surface: #FAFAFA;
+      --wp--preset--color--surface-warm: #F5F0EB;
+      --wp--preset--color--background-dark: #0F172A;
+      --wp--preset--color--border: #E5E7EB;
+      --wp--preset--color--border-warm: #D4C4B8;
+      --wp--preset--color--border-dark: #1E293B;
+      --wp--preset--color--accent: #4F46E5;
+      --wp--preset--color--accent-light: #818CF8;
+      --wp--preset--color--accent-surface: #EEF2FF;
+      --wp--preset--color--foreground-on-dark: #E2E8F0;
+      --wp--preset--color--muted-on-dark: #94A3B8;
+      --wp--preset--color--surface-dark: #1E293B;
+      --wp--preset--color--near-black: #141414;
+      --wp--preset--color--terracotta: #C24612;
+      --wp--preset--color--grey-light: #d6d6d6;
+      --wp--preset--color--star-yellow: #FBBF24;
+      --wp--preset--color--review-bg: #F9FAFB;
+      --wp--preset--color--review-border: #F3F4F6;
+      --wp--preset--color--divider-dark: #334155;
+      --wp--preset--color--body-text: #374151;
+      --wp--preset--color--case-border: #E8E5E0;
+      --wp--preset--color--muted-warm: #71717A;
+
+      /* Font families */
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --wp--preset--font-family--inter: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --wp--preset--font-family--playfair: "Playfair Display", Georgia, "Times New Roman", serif;
+
+      /* Font sizes */
+      --wp--preset--font-size--h2: 2.25rem;
+      --wp--preset--font-size--h3: 2rem;
+      --wp--preset--font-size--h4: 1.5rem;
+      --wp--preset--font-size--body: 1.125rem;
+      --wp--preset--font-size--small: 0.875rem;
+    }
+
+    /* Focus visibility */
+    :focus-visible {
+      outline: 2px solid var(--wp--preset--color--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Logo ticker animation */
+    @keyframes ticker-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    .ticker-track {
+      animation: ticker-scroll 30s linear infinite;
+    }
+
+    /* Responsive preview helper */
+    body::after {
+      content: 'Desktop (1440px+)';
+      position: fixed;
+      bottom: 8px;
+      right: 12px;
+      font-size: 11px;
+      color: #999;
+      pointer-events: none;
+    }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px)  { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-[var(--wp--preset--color--white)]">
+
+  <!-- ============================================= -->
+  <!-- STYLE 1: Logo Ticker -->
+  <!-- ============================================= -->
+  <section
+    class="bg-[var(--wp--preset--color--white)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[2rem] overflow-hidden"
+    aria-label="Trusted by leading companies"
+    data-style="logo-ticker"
+    data-color-mode="light"
+  >
+    <div class="max-w-[80rem] mx-auto flex flex-col items-center gap-[1.25rem]">
+      <p class="text-[0.6875rem] font-semibold tracking-[0.125rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)] uppercase">
+        Trusted by 10,000+ teams
+      </p>
+      <div class="w-full overflow-hidden" aria-hidden="true">
+        <div class="ticker-track flex items-center gap-[3.5rem] whitespace-nowrap">
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">STRIPE</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">VERCEL</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">LINEAR</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">NOTION</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">FIGMA</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">RAMP</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">PLAID</span>
+          <!-- Duplicate for seamless loop -->
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">STRIPE</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">VERCEL</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">LINEAR</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">NOTION</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">FIGMA</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">RAMP</span>
+          <span class="text-[1.25rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--grey-light)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">PLAID</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-8 border-[var(--wp--preset--color--border)]">
+
+  <!-- ============================================= -->
+  <!-- STYLE 2: Testimonial Cards -->
+  <!-- ============================================= -->
+  <section
+    class="bg-[var(--wp--preset--color--surface)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]"
+    aria-labelledby="testimonials-heading"
+    data-style="testimonials"
+    data-color-mode="light"
+  >
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[2.5rem]">
+      <header class="flex flex-col items-center text-center gap-[0.75rem]">
+        <h2
+          id="testimonials-heading"
+          class="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-bold tracking-tight text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight"
+        >
+          What our customers say
+        </h2>
+        <p class="text-[0.9375rem] md:text-[1rem] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[35rem] leading-relaxed">
+          Don't just take our word for it — hear from the teams using us daily.
+        </p>
+      </header>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.25rem] list-none p-0">
+        <li>
+          <blockquote class="flex flex-col justify-between h-full rounded-[1rem] bg-[var(--wp--preset--color--white)] border border-[var(--wp--preset--color--border)] p-[1.75rem] gap-[1.25rem]">
+            <p class="text-[0.9375rem] leading-[1.65] text-[var(--wp--preset--color--body-text)] font-[family-name:var(--wp--preset--font-family--inter)]">
+              "FlowStack cut our sprint planning time in half. The AI suggestions are genuinely useful — not just noise."
+            </p>
+            <footer class="flex items-center gap-[0.75rem]">
+              <img
+                src="https://images.unsplash.com/photo-1716237443030-b1ddf1e2176c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ3OTR8&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Sarah Kim, Head of Product at Loom"
+                width="40" height="40" loading="lazy" decoding="async"
+                class="rounded-full object-cover w-[2.5rem] h-[2.5rem]"
+              >
+              <div class="flex flex-col gap-[0.125rem]">
+                <cite class="not-italic text-[0.8125rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">Sarah Kim</cite>
+                <span class="text-[0.75rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Head of Product, Loom</span>
+              </div>
+            </footer>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="flex flex-col justify-between h-full rounded-[1rem] bg-[var(--wp--preset--color--white)] border border-[var(--wp--preset--color--border)] p-[1.75rem] gap-[1.25rem]">
+            <p class="text-[0.9375rem] leading-[1.65] text-[var(--wp--preset--color--body-text)] font-[family-name:var(--wp--preset--font-family--inter)]">
+              "We migrated from three different tools to FlowStack. The unified view alone saved us 10+ hours per week across the team."
+            </p>
+            <footer class="flex items-center gap-[0.75rem]">
+              <img
+                src="https://images.unsplash.com/photo-1771050889377-b68415885c64?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4MDZ8&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="James Chen, CTO at ScaleOps"
+                width="40" height="40" loading="lazy" decoding="async"
+                class="rounded-full object-cover w-[2.5rem] h-[2.5rem]"
+              >
+              <div class="flex flex-col gap-[0.125rem]">
+                <cite class="not-italic text-[0.8125rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">James Chen</cite>
+                <span class="text-[0.75rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">CTO, ScaleOps</span>
+              </div>
+            </footer>
+          </blockquote>
+        </li>
+        <li>
+          <blockquote class="flex flex-col justify-between h-full rounded-[1rem] bg-[var(--wp--preset--color--white)] border border-[var(--wp--preset--color--border)] p-[1.75rem] gap-[1.25rem]">
+            <p class="text-[0.9375rem] leading-[1.65] text-[var(--wp--preset--color--body-text)] font-[family-name:var(--wp--preset--font-family--inter)]">
+              "The developer experience is exceptional. Our engineers actually enjoy using it, which is rare for project management tools."
+            </p>
+            <footer class="flex items-center gap-[0.75rem]">
+              <img
+                src="https://images.unsplash.com/photo-1700248356502-ca48ae3bafd6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4MDZ8&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Maria Lopez, VP Engineering at Stripe"
+                width="40" height="40" loading="lazy" decoding="async"
+                class="rounded-full object-cover w-[2.5rem] h-[2.5rem]"
+              >
+              <div class="flex flex-col gap-[0.125rem]">
+                <cite class="not-italic text-[0.8125rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">Maria Lopez</cite>
+                <span class="text-[0.75rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">VP Engineering, Stripe</span>
+              </div>
+            </footer>
+          </blockquote>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="my-8 border-[var(--wp--preset--color--border)]">
+
+  <!-- ============================================= -->
+  <!-- STYLE 3: Stats Counter -->
+  <!-- ============================================= -->
+  <section
+    class="bg-[var(--wp--preset--color--background-dark)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]"
+    aria-label="Key statistics"
+    data-style="stats"
+    data-color-mode="dark"
+  >
+    <div class="max-w-[80rem] mx-auto">
+      <ul class="flex flex-col md:flex-row items-center justify-between gap-[2rem] md:gap-0 list-none p-0">
+        <li class="flex flex-col items-center gap-[0.25rem]">
+          <span class="text-[2.75rem] font-bold tracking-[-0.094rem] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">10,000+</span>
+          <span class="text-[0.875rem] text-[var(--wp--preset--color--muted-on-dark)] font-[family-name:var(--wp--preset--font-family--inter)]">Teams worldwide</span>
+        </li>
+        <li class="hidden md:block w-[0.0625rem] h-[3.5rem] bg-[var(--wp--preset--color--divider-dark)]" role="presentation" aria-hidden="true"></li>
+        <li class="flex flex-col items-center gap-[0.25rem]">
+          <span class="text-[2.75rem] font-bold tracking-[-0.094rem] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">99.9%</span>
+          <span class="text-[0.875rem] text-[var(--wp--preset--color--muted-on-dark)] font-[family-name:var(--wp--preset--font-family--inter)]">Uptime guarantee</span>
+        </li>
+        <li class="hidden md:block w-[0.0625rem] h-[3.5rem] bg-[var(--wp--preset--color--divider-dark)]" role="presentation" aria-hidden="true"></li>
+        <li class="flex flex-col items-center gap-[0.25rem]">
+          <span class="text-[2.75rem] font-bold tracking-[-0.094rem] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">4.9/5</span>
+          <span class="text-[0.875rem] text-[var(--wp--preset--color--muted-on-dark)] font-[family-name:var(--wp--preset--font-family--inter)]">Average rating on G2</span>
+        </li>
+        <li class="hidden md:block w-[0.0625rem] h-[3.5rem] bg-[var(--wp--preset--color--divider-dark)]" role="presentation" aria-hidden="true"></li>
+        <li class="flex flex-col items-center gap-[0.25rem]">
+          <span class="text-[2.75rem] font-bold tracking-[-0.094rem] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">2M+</span>
+          <span class="text-[0.875rem] text-[var(--wp--preset--color--muted-on-dark)] font-[family-name:var(--wp--preset--font-family--inter)]">Tasks completed daily</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="my-8 border-[var(--wp--preset--color--border)]">
+
+  <!-- ============================================= -->
+  <!-- STYLE 4: Review Highlights -->
+  <!-- ============================================= -->
+  <section
+    class="bg-[var(--wp--preset--color--white)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[3.5rem]"
+    aria-labelledby="reviews-heading"
+    data-style="reviews"
+    data-color-mode="light"
+  >
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[2.25rem]">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-[1rem]">
+        <header class="flex flex-col gap-[0.5rem]">
+          <h2
+            id="reviews-heading"
+            class="text-[1.75rem] md:text-[2rem] font-bold tracking-[-0.05rem] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight"
+          >
+            Loved by developers
+          </h2>
+          <p class="text-[0.9375rem] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">
+            See what people are saying across the web.
+          </p>
+        </header>
+        <div class="flex items-center gap-[0.75rem]">
+          <div class="flex items-center gap-[0.25rem]" aria-label="4.9 out of 5 stars">
+            <svg aria-hidden="true" focusable="false" class="w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" focusable="false" class="w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" focusable="false" class="w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" focusable="false" class="w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg aria-hidden="true" focusable="false" class="w-[1.25rem] h-[1.25rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <span class="text-[0.875rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">4.9 out of 5</span>
+          <span class="text-[0.875rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">· 2,847 reviews</span>
+        </div>
+      </div>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-[1.25rem] list-none p-0">
+        <li>
+          <article class="flex flex-col justify-between h-full rounded-[0.75rem] bg-[var(--wp--preset--color--review-bg)] border border-[var(--wp--preset--color--review-border)] p-[1.5rem] gap-[1rem]">
+            <div class="flex items-center gap-[0.1875rem]" aria-label="5 out of 5 stars">
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="text-[0.875rem] leading-[1.6] text-[var(--wp--preset--color--body-text)] font-[family-name:var(--wp--preset--font-family--inter)]">
+              "Best dev tool investment we've made this year. Setup took 15 minutes and we were productive on day one."
+            </p>
+            <div class="flex items-center gap-[0.5rem]">
+              <span class="text-[0.75rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">Alex T.</span>
+              <span class="text-[0.75rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">via G2</span>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col justify-between h-full rounded-[0.75rem] bg-[var(--wp--preset--color--review-bg)] border border-[var(--wp--preset--color--review-border)] p-[1.5rem] gap-[1rem]">
+            <div class="flex items-center gap-[0.1875rem]" aria-label="5 out of 5 stars">
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="text-[0.875rem] leading-[1.6] text-[var(--wp--preset--color--body-text)] font-[family-name:var(--wp--preset--font-family--inter)]">
+              "The integrations are seamless. Slack, GitHub, Figma — everything just works without configuration."
+            </p>
+            <div class="flex items-center gap-[0.5rem]">
+              <span class="text-[0.75rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">Priya R.</span>
+              <span class="text-[0.75rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">via Product Hunt</span>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col justify-between h-full rounded-[0.75rem] bg-[var(--wp--preset--color--review-bg)] border border-[var(--wp--preset--color--review-border)] p-[1.5rem] gap-[1rem]">
+            <div class="flex items-center gap-[0.1875rem]" aria-label="5 out of 5 stars">
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="text-[0.875rem] leading-[1.6] text-[var(--wp--preset--color--body-text)] font-[family-name:var(--wp--preset--font-family--inter)]">
+              "Finally a tool that engineers and PMs both love. The roadmap view is incredibly well-designed."
+            </p>
+            <div class="flex items-center gap-[0.5rem]">
+              <span class="text-[0.75rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">Marcus D.</span>
+              <span class="text-[0.75rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">via Capterra</span>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col justify-between h-full rounded-[0.75rem] bg-[var(--wp--preset--color--review-bg)] border border-[var(--wp--preset--color--review-border)] p-[1.5rem] gap-[1rem]">
+            <div class="flex items-center gap-[0.1875rem]" aria-label="5 out of 5 stars">
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem] text-[var(--wp--preset--color--star-yellow)]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <p class="text-[0.875rem] leading-[1.6] text-[var(--wp--preset--color--body-text)] font-[family-name:var(--wp--preset--font-family--inter)]">
+              "Support response time is unreal. Had a complex issue resolved in under 2 hours on a Sunday."
+            </p>
+            <div class="flex items-center gap-[0.5rem]">
+              <span class="text-[0.75rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)]">Lisa W.</span>
+              <span class="text-[0.75rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">via Twitter</span>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="my-8 border-[var(--wp--preset--color--border)]">
+
+  <!-- ============================================= -->
+  <!-- STYLE 5: Case Study Preview -->
+  <!-- ============================================= -->
+  <section
+    class="bg-[var(--wp--preset--color--surface-warm)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]"
+    aria-labelledby="case-studies-heading"
+    data-style="case-studies"
+    data-color-mode="light"
+  >
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[2.5rem]">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-[1rem]">
+        <header class="flex flex-col gap-[0.5rem]">
+          <span class="text-[0.6875rem] font-bold tracking-[0.156rem] text-[var(--wp--preset--color--muted-on-dark)] font-[family-name:var(--wp--preset--font-family--inter)] uppercase">Customer Stories</span>
+          <h2
+            id="case-studies-heading"
+            class="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-normal tracking-[-0.045rem] text-[var(--wp--preset--color--near-black)] font-[family-name:var(--wp--preset--font-family--playfair)] leading-tight"
+          >
+            Real results from real teams
+          </h2>
+        </header>
+        <a href="#" class="flex items-center gap-[0.375rem] text-[0.875rem] font-semibold text-[var(--wp--preset--color--terracotta)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity">
+          View all stories
+          <svg aria-hidden="true" focusable="false" class="w-[1rem] h-[1rem]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </div>
+      <ul class="grid grid-cols-1 lg:grid-cols-2 gap-[1.5rem] list-none p-0">
+        <li>
+          <article class="flex flex-col md:flex-row h-full rounded-[1rem] bg-[var(--wp--preset--color--white)] border border-[var(--wp--preset--color--case-border)] overflow-hidden">
+            <div class="md:w-[17.5rem] shrink-0 h-[12rem] md:h-auto">
+              <img
+                src="https://images.unsplash.com/photo-1758873272414-c0bf30332738?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4ODN8&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Dataflow Inc. office workspace showing collaborative development environment"
+                width="280" height="400" loading="lazy" decoding="async"
+                class="w-full h-full object-cover"
+              >
+            </div>
+            <div class="flex flex-col justify-center gap-[1rem] p-[1.75rem]">
+              <span class="text-[0.6875rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--terracotta)] font-[family-name:var(--wp--preset--font-family--inter)] uppercase">Dataflow Inc.</span>
+              <h3 class="text-[1.25rem] font-bold tracking-[-0.025rem] leading-[1.3] text-[var(--wp--preset--color--near-black)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">How Dataflow reduced deployment time by 73%</h3>
+              <p class="text-[0.875rem] italic text-[var(--wp--preset--color--muted-warm)] font-[family-name:var(--wp--preset--font-family--inter)]">"The platform paid for itself in the first month."</p>
+              <a href="#" class="flex items-center gap-[0.375rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--terracotta)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity">
+                Read case study
+                <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col md:flex-row h-full rounded-[1rem] bg-[var(--wp--preset--color--white)] border border-[var(--wp--preset--color--case-border)] overflow-hidden">
+            <div class="md:w-[17.5rem] shrink-0 h-[12rem] md:h-auto">
+              <img
+                src="https://images.unsplash.com/photo-1758598307153-f1c53d9db23e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMDQ4OTl8&ixlib=rb-4.1.0&q=80&w=1080"
+                alt="Scale AI engineering team collaborating on project management workflow"
+                width="280" height="400" loading="lazy" decoding="async"
+                class="w-full h-full object-cover"
+              >
+            </div>
+            <div class="flex flex-col justify-center gap-[1rem] p-[1.75rem]">
+              <span class="text-[0.6875rem] font-bold tracking-[0.125rem] text-[var(--wp--preset--color--terracotta)] font-[family-name:var(--wp--preset--font-family--inter)] uppercase">Scale AI</span>
+              <h3 class="text-[1.25rem] font-bold tracking-[-0.025rem] leading-[1.3] text-[var(--wp--preset--color--near-black)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Scaling from 50 to 500 engineers without losing velocity</h3>
+              <p class="text-[0.875rem] italic text-[var(--wp--preset--color--muted-warm)] font-[family-name:var(--wp--preset--font-family--inter)]">"Our onboarding time dropped from 3 weeks to 3 days."</p>
+              <a href="#" class="flex items-center gap-[0.375rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--terracotta)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity">
+                Read case study
+                <svg aria-hidden="true" focusable="false" class="w-[0.875rem] h-[0.875rem]" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

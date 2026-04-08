@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Design Preview</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-muted: #6B7280;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--surface: #FAFAFA;
+      --wp--preset--color--surface-warm: #F5F0EB;
+      --wp--preset--color--surface-dark: #1E293B;
+      --wp--preset--color--background-dark: #0F172A;
+      --wp--preset--color--border: #E5E7EB;
+      --wp--preset--color--border-warm: #D4C4B8;
+      --wp--preset--color--border-dark: #1E293B;
+      --wp--preset--color--accent: #4F46E5;
+      --wp--preset--color--accent-light: #818CF8;
+      --wp--preset--color--accent-surface: #EEF2FF;
+      --wp--preset--color--foreground-on-dark: #E2E8F0;
+      --wp--preset--color--muted-on-dark: #94A3B8;
+      --wp--preset--color--near-black: #141414;
+      --wp--preset--color--grey-mid: #4D5051;
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--wp--preset--color--accent);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    body::after {
+      content: 'Desktop (1440px+)';
+      position: fixed;
+      bottom: 8px;
+      right: 12px;
+      font-size: 11px;
+      color: #999;
+      pointer-events: none;
+    }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px)  { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-[var(--wp--preset--color--white)]">
+
+  <!-- ============================================ -->
+  <!-- GALLERY 1 — Masonry Grid (style: masonry, colorMode: light) -->
+  <!-- ============================================ -->
+  <section class="bg-[var(--wp--preset--color--white)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]" aria-labelledby="gal1-heading">
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[3rem]">
+      <header class="flex flex-col items-center text-center gap-[0.75rem]">
+        <h2 id="gal1-heading" class="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-bold tracking-tight text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight">Our Work</h2>
+        <p class="text-[0.9375rem] md:text-[1rem] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[32.5rem] leading-relaxed">A curated selection of projects we're most proud of — from branding to digital experiences.</p>
+      </header>
+      <ul class="columns-1 md:columns-2 lg:columns-3 gap-[1.25rem] list-none p-0 m-0">
+        <li class="mb-[1.25rem] break-inside-avoid">
+          <figure class="relative overflow-hidden rounded-[0.75rem] group">
+            <img src="https://images.unsplash.com/photo-1558655146-d09347e92766?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Vibrant gradient abstract design for Meridian brand identity" width="400" height="320" loading="lazy" decoding="async" class="w-full h-auto object-cover">
+            <figcaption class="absolute bottom-0 left-0 right-0 p-[1.25rem] flex flex-col gap-[0.25rem]" style="background: linear-gradient(to top, rgba(0,0,0,0.73) 0%, transparent 100%);">
+              <span class="text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Meridian Brand Identity</span>
+              <span class="text-[0.75rem] font-medium text-white/70 font-[family-name:var(--wp--preset--font-family--inter)]">Branding</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="mb-[1.25rem] break-inside-avoid">
+          <figure class="relative overflow-hidden rounded-[0.75rem] group">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Mobile app interface with clean dashboard for Pulse project" width="400" height="240" loading="lazy" decoding="async" class="w-full h-auto object-cover">
+            <figcaption class="absolute bottom-0 left-0 right-0 p-[1.25rem] flex flex-col gap-[0.25rem]" style="background: linear-gradient(to top, rgba(0,0,0,0.73) 0%, transparent 100%);">
+              <span class="text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Pulse Dashboard</span>
+              <span class="text-[0.75rem] font-medium text-white/70 font-[family-name:var(--wp--preset--font-family--inter)]">UI Design</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="mb-[1.25rem] break-inside-avoid">
+          <figure class="relative overflow-hidden rounded-[0.75rem] group">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Modern landing page layout for Aqua web design project" width="400" height="240" loading="lazy" decoding="async" class="w-full h-auto object-cover">
+            <figcaption class="absolute bottom-0 left-0 right-0 p-[1.25rem] flex flex-col gap-[0.25rem]" style="background: linear-gradient(to top, rgba(0,0,0,0.73) 0%, transparent 100%);">
+              <span class="text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Aqua Landing Page</span>
+              <span class="text-[0.75rem] font-medium text-white/70 font-[family-name:var(--wp--preset--font-family--inter)]">Web Design</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="mb-[1.25rem] break-inside-avoid">
+          <figure class="relative overflow-hidden rounded-[0.75rem] group">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Verde mobile app redesign with green accent theme" width="400" height="320" loading="lazy" decoding="async" class="w-full h-auto object-cover">
+            <figcaption class="absolute bottom-0 left-0 right-0 p-[1.25rem] flex flex-col gap-[0.25rem]" style="background: linear-gradient(to top, rgba(0,0,0,0.73) 0%, transparent 100%);">
+              <span class="text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Verde App Redesign</span>
+              <span class="text-[0.75rem] font-medium text-white/70 font-[family-name:var(--wp--preset--font-family--inter)]">Mobile App</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="mb-[1.25rem] break-inside-avoid">
+          <figure class="relative overflow-hidden rounded-[0.75rem] group">
+            <img src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Solstice marketing campaign with bold visual approach" width="400" height="280" loading="lazy" decoding="async" class="w-full h-auto object-cover">
+            <figcaption class="absolute bottom-0 left-0 right-0 p-[1.25rem] flex flex-col gap-[0.25rem]" style="background: linear-gradient(to top, rgba(0,0,0,0.73) 0%, transparent 100%);">
+              <span class="text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Solstice Campaign</span>
+              <span class="text-[0.75rem] font-medium text-white/70 font-[family-name:var(--wp--preset--font-family--inter)]">Marketing</span>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="mb-[1.25rem] break-inside-avoid">
+          <figure class="relative overflow-hidden rounded-[0.75rem] group">
+            <img src="https://images.unsplash.com/photo-1523726491678-bf852e717f6a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Amethyst e-commerce platform with product showcase" width="400" height="280" loading="lazy" decoding="async" class="w-full h-auto object-cover">
+            <figcaption class="absolute bottom-0 left-0 right-0 p-[1.25rem] flex flex-col gap-[0.25rem]" style="background: linear-gradient(to top, rgba(0,0,0,0.73) 0%, transparent 100%);">
+              <span class="text-[0.9375rem] font-semibold tracking-[-0.02em] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Amethyst E-commerce</span>
+              <span class="text-[0.75rem] font-medium text-white/70 font-[family-name:var(--wp--preset--font-family--inter)]">E-commerce</span>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="my-8 border-gray-200">
+
+  <!-- ============================================ -->
+  <!-- GALLERY 2 — Uniform Grid + Overlay (style: cards, colorMode: light) -->
+  <!-- ============================================ -->
+  <section class="bg-[var(--wp--preset--color--surface)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]" aria-labelledby="gal2-heading">
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[3rem]">
+      <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-[1rem]">
+        <div class="flex flex-col gap-[0.5rem]">
+          <h2 id="gal2-heading" class="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-bold tracking-tight text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight">Selected Projects</h2>
+          <p class="text-[0.9375rem] md:text-[1rem] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] leading-relaxed">Explore our latest work across branding, web, and product design.</p>
+        </div>
+        <a href="#" class="inline-flex items-center gap-[0.5rem] text-[0.875rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity shrink-0">
+          View All
+          <svg class="w-[1rem] h-[1rem]" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </header>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem] list-none p-0 m-0">
+        <li>
+          <article class="overflow-hidden rounded-[0.75rem] border border-[var(--wp--preset--color--border)] bg-[var(--wp--preset--color--white)] h-full flex flex-col">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Modern residential architecture with clean lines and large windows" width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.625rem] p-[1rem_1.25rem]">
+              <span class="inline-flex self-start items-center rounded-full px-[0.625rem] py-[0.25rem] text-[0.6875rem] font-semibold bg-[var(--wp--preset--color--accent-surface)] text-[var(--wp--preset--color--accent)] font-[family-name:var(--wp--preset--font-family--inter)]">UI/UX Design</span>
+              <h3 class="text-[1.125rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Nova Banking App</h3>
+              <p class="text-[0.8125rem] leading-[1.6] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">A modern mobile banking experience with biometric auth and real-time analytics.</p>
+              <a href="#" class="inline-flex items-center gap-[0.375rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--accent)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity">
+                View Project
+                <svg class="w-[0.875rem] h-[0.875rem]" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="overflow-hidden rounded-[0.75rem] border border-[var(--wp--preset--color--border)] bg-[var(--wp--preset--color--white)] h-full flex flex-col">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Developer workspace with code on screen for Zenith SaaS platform" width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.625rem] p-[1rem_1.25rem]">
+              <span class="inline-flex self-start items-center rounded-full px-[0.625rem] py-[0.25rem] text-[0.6875rem] font-semibold bg-green-50 text-green-700 font-[family-name:var(--wp--preset--font-family--inter)]">Web Development</span>
+              <h3 class="text-[1.125rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Zenith SaaS Platform</h3>
+              <p class="text-[0.8125rem] leading-[1.6] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">End-to-end design and development of a project management tool for distributed teams.</p>
+              <a href="#" class="inline-flex items-center gap-[0.375rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--accent)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity">
+                View Project
+                <svg class="w-[0.875rem] h-[0.875rem]" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="overflow-hidden rounded-[0.75rem] border border-[var(--wp--preset--color--border)] bg-[var(--wp--preset--color--white)] h-full flex flex-col">
+            <div class="aspect-[4/3] overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1618005198919-d3d4b5a92ead?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Colorful 3D shapes representing Prism brand system identity" width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.625rem] p-[1rem_1.25rem]">
+              <span class="inline-flex self-start items-center rounded-full px-[0.625rem] py-[0.25rem] text-[0.6875rem] font-semibold bg-orange-50 text-orange-700 font-[family-name:var(--wp--preset--font-family--inter)]">Branding</span>
+              <h3 class="text-[1.125rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Prism Brand System</h3>
+              <p class="text-[0.8125rem] leading-[1.6] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">Complete visual identity system including logo, typography, color palette, and brand guidelines.</p>
+              <a href="#" class="inline-flex items-center gap-[0.375rem] text-[0.8125rem] font-semibold text-[var(--wp--preset--color--accent)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity">
+                View Project
+                <svg class="w-[0.875rem] h-[0.875rem]" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="my-8 border-gray-200">
+
+  <!-- ============================================ -->
+  <!-- GALLERY 3 — Featured + Grid (style: featured, colorMode: light) -->
+  <!-- ============================================ -->
+  <section class="bg-[var(--wp--preset--color--surface-warm)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]" aria-labelledby="gal3-heading">
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[3rem]">
+      <header class="flex flex-col md:flex-row md:items-end md:justify-between gap-[1rem]">
+        <div class="flex flex-col gap-[0.5rem]">
+          <h2 id="gal3-heading" class="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-bold tracking-tight text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight">Featured Work</h2>
+          <p class="text-[0.9375rem] md:text-[1rem] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] leading-relaxed">Handpicked projects that showcase our design philosophy and craft.</p>
+        </div>
+        <a href="#" class="inline-flex items-center gap-[0.5rem] text-[0.875rem] font-semibold text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--inter)] hover:opacity-80 transition-opacity shrink-0">
+          View All Projects
+          <svg class="w-[1rem] h-[1rem]" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
+      </header>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-[1.5rem]">
+        <article class="flex flex-col gap-[1rem]">
+          <div class="overflow-hidden rounded-[0.75rem] aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Open office space with modern furniture for Horizon platform redesign" width="600" height="450" loading="lazy" decoding="async" class="w-full h-full object-cover">
+          </div>
+          <div class="flex flex-col gap-[0.25rem]">
+            <div class="flex items-center gap-[0.5rem]">
+              <span class="inline-flex items-center rounded-full px-[0.625rem] py-[0.25rem] text-[0.6875rem] font-semibold bg-[var(--wp--preset--color--foreground)] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--inter)]">Case Study</span>
+              <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Fintech &middot; 2026</span>
+            </div>
+            <h3 class="text-[1.375rem] font-bold tracking-[-0.03em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Horizon — Platform Redesign</h3>
+            <p class="text-[0.875rem] leading-[1.6] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">A complete redesign of a digital banking experience serving 2M+ users.</p>
+          </div>
+        </article>
+        <div class="flex flex-col gap-[1.5rem]">
+          <article class="flex flex-col gap-[0.75rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[16/9]">
+              <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Abstract 3D render with soft tones for Aura brand identity" width="400" height="225" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.125rem]">
+              <h3 class="text-[1rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Aura Brand Identity</h3>
+              <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Branding &middot; 2025</span>
+            </div>
+          </article>
+          <article class="flex flex-col gap-[0.75rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[16/9]">
+              <img src="https://images.unsplash.com/photo-1616469829581-73993eb86b02?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Tropical plant arrangement for Bloom mobile app design" width="400" height="225" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.125rem]">
+              <h3 class="text-[1rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Bloom Mobile App</h3>
+              <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Product Design &middot; 2026</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="my-8 border-gray-200">
+
+  <!-- ============================================ -->
+  <!-- GALLERY 4 — Dark Showcase (style: showcase, colorMode: dark) -->
+  <!-- ============================================ -->
+  <section class="bg-[#09090B] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]" aria-labelledby="gal4-heading">
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[3rem]">
+      <header class="flex flex-col items-center text-center gap-[1rem]">
+        <span class="inline-flex items-center rounded-full px-[1rem] py-[0.375rem] text-[0.6875rem] font-semibold tracking-[0.1em] text-[#A1A1AA] bg-[#18181B] border border-[#27272A] font-[family-name:var(--wp--preset--font-family--inter)]">PORTFOLIO</span>
+        <h2 id="gal4-heading" class="text-[2rem] md:text-[2.25rem] lg:text-[2.5rem] font-bold tracking-[-0.03em] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight">Crafted with Precision</h2>
+        <p class="text-[0.9375rem] md:text-[1rem] text-[#71717A] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[30rem] leading-relaxed">Each project is a story of collaboration, strategy, and meticulous execution.</p>
+      </header>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.25rem] list-none p-0 m-0">
+        <li>
+          <article class="flex flex-col gap-[1rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Laptop on dark surface with blue light for Obsidian trading platform" width="400" height="320" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.375rem]">
+              <h3 class="text-[1.125rem] font-bold tracking-[-0.02em] text-[#FAFAFA] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Obsidian Platform</h3>
+              <p class="text-[0.875rem] leading-[1.6] text-[#71717A] font-[family-name:var(--wp--preset--font-family--inter)]">A dark-themed trading platform built for professional crypto traders.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col gap-[1rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Retro gaming setup with neon lighting for Nebula music app" width="400" height="320" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.375rem]">
+              <h3 class="text-[1.125rem] font-bold tracking-[-0.02em] text-[#FAFAFA] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Nebula Music App</h3>
+              <p class="text-[0.875rem] leading-[1.6] text-[#71717A] font-[family-name:var(--wp--preset--font-family--inter)]">Immersive music streaming experience with spatial audio visualization.</p>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col gap-[1rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Skyscrapers viewed from below for Atlas navigation system" width="400" height="320" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.375rem]">
+              <h3 class="text-[1.125rem] font-bold tracking-[-0.02em] text-[#FAFAFA] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Atlas Navigation</h3>
+              <p class="text-[0.875rem] leading-[1.6] text-[#71717A] font-[family-name:var(--wp--preset--font-family--inter)]">Next-generation mapping and navigation for autonomous vehicles.</p>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="my-8 border-gray-200">
+
+  <!-- ============================================ -->
+  <!-- GALLERY 5 — Filterable Portfolio (style: portfolio, colorMode: light) -->
+  <!-- ============================================ -->
+  <section class="bg-[var(--wp--preset--color--white)] px-[1.25rem] md:px-[2.5rem] lg:px-[5.625rem] py-[3rem] md:py-[4rem]" aria-labelledby="gal5-heading">
+    <div class="max-w-[80rem] mx-auto flex flex-col gap-[2.5rem]">
+      <header class="flex flex-col items-center text-center gap-[0.75rem]">
+        <h2 id="gal5-heading" class="text-[1.75rem] md:text-[2rem] lg:text-[2.25rem] font-bold tracking-tight text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)] leading-tight">Our Portfolio</h2>
+        <p class="text-[0.9375rem] md:text-[1rem] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[30rem] leading-relaxed">Filter by category to explore the work that matters most to you.</p>
+      </header>
+      <nav aria-label="Portfolio filter categories" class="flex flex-wrap items-center justify-center gap-[0.5rem]">
+        <button type="button" class="rounded-full px-[1.25rem] py-[0.625rem] text-[0.875rem] font-semibold bg-[var(--wp--preset--color--foreground)] text-[var(--wp--preset--color--white)] font-[family-name:var(--wp--preset--font-family--inter)] transition-colors duration-200" aria-pressed="true">All Work</button>
+        <button type="button" class="rounded-full px-[1.25rem] py-[0.625rem] text-[0.875rem] font-medium border border-[var(--wp--preset--color--border)] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] transition-colors duration-200" aria-pressed="false">Branding</button>
+        <button type="button" class="rounded-full px-[1.25rem] py-[0.625rem] text-[0.875rem] font-medium border border-[var(--wp--preset--color--border)] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] transition-colors duration-200" aria-pressed="false">Web Design</button>
+        <button type="button" class="rounded-full px-[1.25rem] py-[0.625rem] text-[0.875rem] font-medium border border-[var(--wp--preset--color--border)] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] transition-colors duration-200" aria-pressed="false">Mobile</button>
+        <button type="button" class="rounded-full px-[1.25rem] py-[0.625rem] text-[0.875rem] font-medium border border-[var(--wp--preset--color--border)] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] transition-colors duration-200" aria-pressed="false">Product</button>
+      </nav>
+      <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1.5rem] list-none p-0 m-0">
+        <li>
+          <article class="flex flex-col gap-[0.875rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Geometric pattern design for Vertex brand identity project" width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.25rem]">
+              <h3 class="text-[1.0625rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Vertex Brand Identity</h3>
+              <div class="flex items-center gap-[0.5rem]">
+                <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">Branding</span>
+                <span class="text-[0.8125rem] text-[var(--wp--preset--color--border)] font-[family-name:var(--wp--preset--font-family--inter)]">&bull;</span>
+                <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">2026</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col gap-[0.875rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Digital interface with data visualization for Flux analytics" width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.25rem]">
+              <h3 class="text-[1.0625rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Flux Analytics Platform</h3>
+              <div class="flex items-center gap-[0.5rem]">
+                <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">Web Design</span>
+                <span class="text-[0.8125rem] text-[var(--wp--preset--color--border)] font-[family-name:var(--wp--preset--font-family--inter)]">&bull;</span>
+                <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">2025</span>
+              </div>
+            </div>
+          </article>
+        </li>
+        <li>
+          <article class="flex flex-col gap-[0.875rem]">
+            <div class="overflow-hidden rounded-[0.75rem] aspect-[4/3]">
+              <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzUxMTAzOTN8&ixlib=rb-4.1.0&q=80&w=1080" alt="Colorful mobile app screens for Neon mobile experience" width="400" height="300" loading="lazy" decoding="async" class="w-full h-full object-cover">
+            </div>
+            <div class="flex flex-col gap-[0.25rem]">
+              <h3 class="text-[1.0625rem] font-bold tracking-[-0.02em] text-[var(--wp--preset--color--foreground)] font-[family-name:var(--wp--preset--font-family--dm-sans)]">Neon Mobile Experience</h3>
+              <div class="flex items-center gap-[0.5rem]">
+                <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">Mobile App</span>
+                <span class="text-[0.8125rem] text-[var(--wp--preset--color--border)] font-[family-name:var(--wp--preset--font-family--inter)]">&bull;</span>
+                <span class="text-[0.8125rem] font-medium text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)]">2026</span>
+              </div>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</body>
+</html>

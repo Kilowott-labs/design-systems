@@ -1,0 +1,234 @@
+/**
+ * style.scss — site-header
+ * Only CSS that Tailwind cannot express. All colors via theme.json tokens.
+ */
+
+.wp-block-kw-package-site-header {
+
+	/* Sticky shadow on scroll — Tailwind cannot apply shadow conditionally via CSS only */
+	&.sticky {
+		transition: box-shadow 200ms ease;
+	}
+
+	&[data-style="search"] {
+		box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.04);
+	}
+
+	/* Mega panel slide-down — Tailwind cannot animate grid-template-rows from 0 to auto */
+	.site-header-mega-panel {
+		overflow: hidden;
+		transition: max-height 300ms cubic-bezier(0.4, 0, 0.2, 1), opacity 200ms ease;
+		max-height: 0;
+		opacity: 0;
+	}
+
+	.site-header-mega-panel:not(.hidden) {
+		max-height: 25rem;
+		opacity: 1;
+	}
+
+	/* Chevron rotation on mega trigger — Tailwind rotate needs JS state binding */
+	.site-header-chevron {
+		transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	[data-site-header-mega-trigger][aria-expanded="true"] .site-header-chevron {
+		transform: rotate(180deg);
+	}
+
+	/* Mobile menu slide-in — Tailwind cannot animate between display:none and visible */
+	.site-header-mobile-menu {
+		transition: opacity 200ms ease, transform 200ms ease;
+	}
+
+	.site-header-mobile-menu.hidden {
+		opacity: 0;
+		pointer-events: none;
+		transform: translateX(100%);
+	}
+
+	.site-header-mobile-menu:not(.hidden) {
+		opacity: 1;
+		pointer-events: auto;
+		transform: translateX(0);
+	}
+
+	/* Focus visible — ring matches theme accent */
+	a:focus-visible,
+	button:focus-visible {
+		outline: 2px solid var(--wp--preset--color--accent);
+		outline-offset: 2px;
+		border-radius: 0.25rem;
+	}
+
+	/* ── wp_nav_menu() styling — Tailwind cannot target generated WordPress markup ── */
+
+	/* Desktop nav: standard / transparent / mega */
+	.site-header-nav-list {
+		/* Reset WordPress default menu markup */
+		.menu-item {
+			list-style: none;
+		}
+
+		.menu-item > a {
+			font-size: 0.875rem;
+			font-weight: 500;
+			font-family: var(--wp--preset--font-family--inter);
+			transition: color 200ms ease;
+			text-decoration: none;
+		}
+
+		/* First item in mega variant acts as trigger — styled bolder */
+		.menu-item:first-child > a {
+			font-weight: 600;
+		}
+
+		/* Sub-menu (dropdown) styling for depth > 1 */
+		.sub-menu {
+			display: none;
+			position: absolute;
+			top: 100%;
+			left: 0;
+			z-index: 50;
+			min-width: 12rem;
+			padding: 0.5rem 0;
+			margin: 0;
+			list-style: none;
+			border-radius: 0.5rem;
+			box-shadow: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.08);
+			background: var(--wp--preset--color--white);
+		}
+
+		.menu-item-has-children:hover > .sub-menu,
+		.menu-item-has-children:focus-within > .sub-menu {
+			display: block;
+		}
+
+		.sub-menu .menu-item > a {
+			display: block;
+			padding: 0.5rem 1rem;
+			font-size: 0.8125rem;
+			font-weight: 400;
+			color: var(--wp--preset--color--foreground-muted);
+			transition: color 200ms ease, background-color 200ms ease;
+		}
+
+		.sub-menu .menu-item > a:hover {
+			color: var(--wp--preset--color--foreground);
+			background-color: var(--wp--preset--color--surface);
+		}
+	}
+
+	/* Ecommerce left nav links */
+	.site-header-ecom-nav {
+		.menu-item {
+			list-style: none;
+		}
+
+		.menu-item > a {
+			font-size: 0.875rem;
+			font-weight: 500;
+			font-family: var(--wp--preset--font-family--inter);
+			transition: color 200ms ease;
+			text-decoration: none;
+		}
+
+		/* First item is bold/active */
+		.menu-item:first-child > a {
+			font-weight: 600;
+		}
+	}
+
+	/* Search variant secondary nav */
+	.site-header-search-nav {
+		.menu-item {
+			list-style: none;
+		}
+
+		.menu-item > a {
+			font-size: 0.8125rem;
+			font-weight: 500;
+			font-family: var(--wp--preset--font-family--inter);
+			transition: color 200ms ease;
+			text-decoration: none;
+		}
+	}
+
+	/* Mobile nav */
+	.site-header-mobile-nav {
+		.menu-item {
+			list-style: none;
+		}
+
+		.menu-item > a {
+			display: block;
+			padding: 0.75rem 0;
+			font-size: 1.125rem;
+			font-weight: 500;
+			font-family: var(--wp--preset--font-family--inter);
+			transition: opacity 200ms ease;
+			text-decoration: none;
+		}
+
+		.menu-item > a:hover {
+			opacity: 0.7;
+		}
+	}
+
+	/* Mega menu columns */
+	.site-header-mega-col {
+		.menu-item {
+			list-style: none;
+		}
+
+		.menu-item > a {
+			display: flex;
+			align-items: center;
+			gap: 0.75rem;
+			font-size: 0.875rem;
+			font-weight: 600;
+			font-family: var(--wp--preset--font-family--inter);
+			text-decoration: none;
+			transition: opacity 200ms ease;
+		}
+
+		.menu-item > a:hover {
+			opacity: 0.8;
+		}
+
+		/* Menu item description — WordPress outputs this when enabled in Screen Options */
+		.menu-item-description {
+			display: block;
+			font-size: 0.75rem;
+			font-weight: 400;
+			margin-top: 0.125rem;
+		}
+	}
+
+	/* Dark mode sub-menu override — Tailwind cannot scope to data attribute + descendant */
+	&[data-color-mode="dark"] {
+		.site-header-nav-list .sub-menu {
+			background: var(--wp--preset--color--surface-dark);
+		}
+
+		.site-header-nav-list .sub-menu .menu-item > a {
+			color: var(--wp--preset--color--muted-on-dark);
+		}
+
+		.site-header-nav-list .sub-menu .menu-item > a:hover {
+			color: var(--wp--preset--color--white);
+			background-color: var(--wp--preset--color--background-dark);
+		}
+	}
+
+	/* Reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+
+		.site-header-mega-panel,
+		.site-header-chevron,
+		.site-header-mobile-menu,
+		&.sticky {
+			transition-duration: 0.01ms !important;
+		}
+	}
+}

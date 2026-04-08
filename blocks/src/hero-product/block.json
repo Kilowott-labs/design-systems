@@ -1,0 +1,70 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/hero-product",
+  "version": "1.0.0",
+  "title": "Hero Product Showcase",
+  "category": "ytf",
+  "icon": "products",
+  "description": "Product showcase hero with centered layout: tagline, heading, product image, specs row, and sticky buy bar at bottom.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "tagline": {
+      "type": "string",
+      "default": "AURA PRO MAX"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Sound, Perfected."
+    },
+    "subheading": {
+      "type": "string",
+      "default": "40-hour battery. Spatial audio. Industry-leading noise cancellation.\nExperience music the way it was meant to be heard."
+    },
+    "productImage": {
+      "type": "string",
+      "default": ""
+    },
+    "productImageId": {
+      "type": "number",
+      "default": 0
+    },
+    "productImageAlt": {
+      "type": "string",
+      "default": "Premium wireless headphones with spatial audio"
+    },
+    "specs": {
+      "type": "array",
+      "default": [
+        { "id": 1, "value": "40h", "label": "Battery Life" },
+        { "id": 2, "value": "-48dB", "label": "Noise Cancelling" },
+        { "id": 3, "value": "Spatial", "label": "Dolby Atmos" },
+        { "id": 4, "value": "USB-C", "label": "Fast Charge" }
+      ]
+    },
+    "buyText": {
+      "type": "string",
+      "default": "Buy — $349"
+    },
+    "buyUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "installmentText": {
+      "type": "string",
+      "default": "or $29/mo for 12 months"
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": { "padding": true, "margin": true }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}

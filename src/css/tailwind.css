@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Ragna';
+    src: local('serif');
+    font-display: swap;
+  }
+
+  /* MangoGrotesque family */
+  @font-face {
+    font-family: 'MangoGrotesque';
+    src: url('../../assets/fonts/MangoGrotesque-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MangoGrotesque';
+    src: url('../../assets/fonts/MangoGrotesque-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MangoGrotesqueSemBd';
+    src: url('../../assets/fonts/MangoGrotesque-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'ClashDisplay-Medium';
+    src: url('../../assets/fonts/ClashDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  /* Lenis smooth scroll reset */
+  html.lenis, html.lenis body { height: auto; }
+  .lenis.lenis-smooth { scroll-behavior: auto !important; }
+  .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+
+  html { overscroll-behavior: none; }
+
+  html,
+  body {
+    overflow-x: clip;
+  }
+
+  /* Hide default cursor when magic cursor is active */
+  body.has-magic-cursor,
+  body.has-magic-cursor a,
+  body.has-magic-cursor button { cursor: none; }
+  @media (hover: none) and (pointer: coarse) {
+    body.has-magic-cursor,
+    body.has-magic-cursor a,
+    body.has-magic-cursor button { cursor: auto; }
+  }
+}
+
+@layer components {
+  /* Banner Text block — collection item interactivity */
+  .collection-item {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+  }
+
+  .collection-item:hover {
+    opacity: 0.8;
+  }
+
+  .collection-item.active {
+    opacity: 1;
+  }
+
+  .collection-item:not(.active) {
+    opacity: 0.4;
+  }
+
+  /* Main image fade transition */
+  .fade-transition {
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  /* CTA button hover using CSS custom property for dynamic color */
+  .banner-cta {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .banner-cta:hover {
+    background-color: var(--banner-text-color, #434868);
+    color: white !important;
+  }
+
+  /* Hide broken / empty image src */
+  [data-banner-image]:not([src]),
+  [data-banner-image][src=''] {
+    opacity: 0;
+  }
+}

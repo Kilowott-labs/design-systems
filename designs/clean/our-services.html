@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services — Design Preview</title>
+
+  <!-- Tailwind CDN — required for preview rendering -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- theme.json CSS custom properties — required for token classes to render -->
+  <style>
+    :root {
+      /* Colors */
+      --wp--preset--color--teal: #2f6f6a;
+      --wp--preset--color--blue-grey: #9fa9bc;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--black: #000000;
+      --wp--preset--color--forest-green: #2e6b3f;
+      --wp--preset--color--mango: #f6b44c;
+      --wp--preset--color--terracotta: #b7423a;
+      --wp--preset--color--royal-blue: #3f6cb5;
+      --wp--preset--color--grey-dark: #2b2b2b;
+      --wp--preset--color--grey: #7a7a7a;
+      --wp--preset--color--grey-light: #d6d6d6;
+      --wp--preset--color--near-black: #141414;
+      --wp--preset--color--lime: #C1ED00;
+      --wp--preset--color--grey-mid: #4D5051;
+      --wp--preset--color--testimonial-bg: #1a1b1e;
+      --wp--preset--color--card-bg: #0e0f11;
+      --wp--preset--color--cta-button: #d0ff71;
+      --wp--preset--color--cta-text: #141414;
+      --wp--preset--color--hero-bg: #f6f8ef;
+
+      /* Font families */
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+
+      /* Font sizes */
+      --wp--preset--font-size--h1: 3.5rem;
+      --wp--preset--font-size--h2: 2.5rem;
+      --wp--preset--font-size--h3: 2rem;
+      --wp--preset--font-size--h4: 1.5rem;
+      --wp--preset--font-size--body: 1.125rem;
+      --wp--preset--font-size--small: 0.875rem;
+
+      /* Spacing */
+      --wp--preset--spacing--xs: 0.5rem;
+      --wp--preset--spacing--s: 1rem;
+      --wp--preset--spacing--m: 1.5rem;
+      --wp--preset--spacing--l: 3rem;
+      --wp--preset--spacing--xl: 5rem;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--wp--preset--color--teal);
+      outline-offset: 2px;
+      border-radius: 2px;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Responsive preview helper */
+    body::after {
+      content: '🖥 Desktop (1440px+)';
+      position: fixed;
+      bottom: 8px;
+      right: 12px;
+      font-size: 11px;
+      color: #999;
+      pointer-events: none;
+    }
+    @media (max-width: 1024px) { body::after { content: '💻 Tablet (768–1024px)'; } }
+    @media (max-width: 640px)  { body::after { content: '📱 Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-[var(--wp--preset--color--white)] m-0 p-0">
+
+  <!-- BLOCK CONTENT STARTS HERE -->
+  <section
+    aria-labelledby="our-services-heading"
+    class="bg-[var(--wp--preset--color--testimonial-bg)] px-[2rem] py-[4rem] md:px-[4rem] md:py-[6rem] lg:px-[5rem] lg:pt-[8.75rem] lg:pb-[6.25rem] xl:px-[10rem] font-[family-name:var(--wp--preset--font-family--dm-sans)]"
+  >
+    <div class="max-w-[90rem] mx-auto">
+
+      <!-- Introduction / Header — 3-column layout on desktop -->
+      <header class="flex flex-col md:flex-row md:justify-between md:items-start gap-[2rem] mb-[3rem] md:mb-[4rem] lg:mb-[5.5rem]">
+
+        <!-- Column 1: Tag -->
+        <div class="flex items-center gap-[0.75rem] shrink-0">
+          <span
+            class="block w-[0.5rem] h-[0.5rem] rounded-[0.3125rem] bg-[var(--wp--preset--color--white)]"
+            aria-hidden="true"
+          ></span>
+          <span class="text-[var(--wp--preset--color--white)] text-[1.0625rem] font-normal">Our Services</span>
+        </div>
+
+        <!-- Column 2: Section heading -->
+        <h2
+          id="our-services-heading"
+          class="text-[var(--wp--preset--color--white)] text-[1.75rem] md:text-[2.25rem] lg:text-[2.75rem] font-semibold leading-[1.18] tracking-[-0.04em] shrink-0 md:max-w-[20rem] lg:max-w-[31.5625rem]"
+        >
+          How we take your<br class="hidden md:inline">
+          business to the next level
+        </h2>
+
+        <!-- Column 3: Description + CTA -->
+        <div class="flex flex-col gap-[2.25rem] md:max-w-[16rem] lg:max-w-[25.4375rem]">
+          <p class="text-[var(--wp--preset--color--white)] text-[1.0625rem] font-normal leading-[1.53]">
+            We are a digital marketing agency with expertise, and we're on a mission to help you take the next step in your business.
+          </p>
+          <a
+            href="#services"
+            class="inline-flex items-center gap-[0.75rem] text-[var(--wp--preset--color--white)] text-[1rem] font-medium tracking-[-0.01em] transition-opacity hover:opacity-80"
+          >
+            See all services
+            <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none" class="shrink-0">
+              <path d="M1 11L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 1L11 1L11 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+
+      </header>
+
+      <!-- Services List — right-aligned, ~70% width on desktop -->
+      <ul class="list-none p-0 m-0 lg:ml-auto lg:w-[70.0625%]">
+
+        <!-- Service 1: Branding -->
+        <li class="flex flex-col md:flex-row md:items-center gap-[1.5rem] md:gap-[2rem] lg:gap-[7.5rem] py-[2rem] lg:py-[3rem] border-b" style="border-color: rgba(255, 255, 255, 0.12);">
+          <!-- UNMAPPED: rgba(255,255,255,0.12) — white at 12% opacity, no theme.json token -->
+          <span class="text-[var(--wp--preset--color--white)] text-[1rem] font-medium tracking-[-0.04em] shrink-0">(01)</span>
+          <div class="flex flex-col gap-[1.5rem] lg:gap-[3rem] flex-1 min-w-0">
+            <h3 class="text-[var(--wp--preset--color--white)] text-[3.5rem] md:text-[5rem] lg:text-[8.375rem] font-normal tracking-[-0.04em] leading-[0.75]">Branding</h3>
+            <ul class="flex flex-wrap items-center gap-[0.75rem] list-none p-0 m-0" aria-label="Branding services">
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Logo design</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Brand Guidelines</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Visual Identity</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Custom Emails</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Presentations</li>
+            </ul>
+          </div>
+          <a href="#branding" aria-label="Learn more about Branding" class="shrink-0 w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] rounded-full flex items-center justify-center transition-colors hover:bg-white/10" style="border: 1px solid rgba(255, 255, 255, 0.1);">
+            <!-- UNMAPPED: rgba(255,255,255,0.1) — white at 10% opacity border -->
+            <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M1 11L11 1" stroke="var(--wp--preset--color--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 1L11 1L11 11" stroke="var(--wp--preset--color--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+
+        <!-- Service 2: Identity -->
+        <li class="flex flex-col md:flex-row md:items-center gap-[1.5rem] md:gap-[2rem] lg:gap-[7.5rem] py-[2rem] lg:py-[3rem] border-b" style="border-color: rgba(255, 255, 255, 0.12);">
+          <span class="text-[var(--wp--preset--color--white)] text-[1rem] font-medium tracking-[-0.04em] shrink-0">(02)</span>
+          <div class="flex flex-col gap-[1.5rem] lg:gap-[3rem] flex-1 min-w-0">
+            <h3 class="text-[var(--wp--preset--color--white)] text-[3.5rem] md:text-[5rem] lg:text-[8.375rem] font-normal tracking-[-0.04em] leading-[0.75]">Identity</h3>
+            <ul class="flex flex-wrap items-center gap-[0.75rem] list-none p-0 m-0" aria-label="Identity services">
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Logo design</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Brand Guidelines</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Visual Identity</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Custom Emails</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Presentations</li>
+            </ul>
+          </div>
+          <a href="#identity" aria-label="Learn more about Identity" class="shrink-0 w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] rounded-full flex items-center justify-center transition-colors hover:bg-white/10" style="border: 1px solid rgba(255, 255, 255, 0.1);">
+            <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M1 11L11 1" stroke="var(--wp--preset--color--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 1L11 1L11 11" stroke="var(--wp--preset--color--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+
+        <!-- Service 3: Impact -->
+        <li class="flex flex-col md:flex-row md:items-center gap-[1.5rem] md:gap-[2rem] lg:gap-[7.5rem] py-[2rem] lg:py-[3rem] border-b" style="border-color: rgba(255, 255, 255, 0.12);">
+          <span class="text-[var(--wp--preset--color--white)] text-[1rem] font-medium tracking-[-0.04em] shrink-0">(03)</span>
+          <div class="flex flex-col gap-[1.5rem] lg:gap-[3rem] flex-1 min-w-0">
+            <h3 class="text-[var(--wp--preset--color--white)] text-[3.5rem] md:text-[5rem] lg:text-[8.375rem] font-normal tracking-[-0.04em] leading-[0.75]">Impact</h3>
+            <ul class="flex flex-wrap items-center gap-[0.75rem] list-none p-0 m-0" aria-label="Impact services">
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Logo design</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Brand Guidelines</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Visual Identity</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Custom Emails</li>
+              <li aria-hidden="true" class="w-[0.375rem] h-[0.375rem] rounded-full bg-[var(--wp--preset--color--grey-light)]"></li>
+              <li class="text-[var(--wp--preset--color--white)] text-[0.875rem] lg:text-[1rem] font-medium tracking-[-0.02em]">Presentations</li>
+            </ul>
+          </div>
+          <a href="#impact" aria-label="Learn more about Impact" class="shrink-0 w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] rounded-full flex items-center justify-center transition-colors hover:bg-white/10" style="border: 1px solid rgba(255, 255, 255, 0.1);">
+            <svg aria-hidden="true" focusable="false" width="12" height="12" viewBox="0 0 12 12" fill="none">
+              <path d="M1 11L11 1" stroke="var(--wp--preset--color--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M1 1L11 1L11 11" stroke="var(--wp--preset--color--white)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+  <!-- BLOCK CONTENT ENDS HERE -->
+
+</body>
+</html>

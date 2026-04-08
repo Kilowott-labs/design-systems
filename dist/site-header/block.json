@@ -1,0 +1,103 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/site-header",
+  "version": "2.0.0",
+  "title": "Site Header",
+  "category": "ytf",
+  "icon": "menu",
+  "description": "Dynamic FSE site header with WordPress native navigation menus. Supports five style variants (standard, transparent, search, mega, ecommerce), light/dark color modes, sticky positioning, mobile hamburger menu, and responsive breakpoints. Menu items managed via Appearance > Menus.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "style": {
+      "type": "string",
+      "default": "standard",
+      "enum": ["standard", "transparent", "search", "mega", "ecommerce"]
+    },
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "menuLocation": {
+      "type": "string",
+      "default": "primary"
+    },
+    "logoText": {
+      "type": "string",
+      "default": "Acme"
+    },
+    "logoShowIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "showCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "ctaText": {
+      "type": "string",
+      "default": "Get Started"
+    },
+    "ctaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showLoginLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "loginText": {
+      "type": "string",
+      "default": "Log in"
+    },
+    "loginUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showSearch": {
+      "type": "boolean",
+      "default": false
+    },
+    "searchPlaceholder": {
+      "type": "string",
+      "default": "Search products, brands, categories..."
+    },
+    "showPromoBar": {
+      "type": "boolean",
+      "default": false
+    },
+    "promoText": {
+      "type": "string",
+      "default": "FREE SHIPPING ON ORDERS OVER $75"
+    },
+    "megaPromoTitle": {
+      "type": "string",
+      "default": "ESG Reporting Suite"
+    },
+    "megaPromoDescription": {
+      "type": "string",
+      "default": "Automated sustainability reports aligned to global frameworks."
+    },
+    "megaPromoUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "isSticky": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": {
+      "padding": true,
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

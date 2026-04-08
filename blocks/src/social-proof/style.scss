@@ -1,0 +1,121 @@
+/**
+ * style.scss — social-proof
+ * Only CSS that Tailwind cannot express. All colors via theme.json tokens.
+ */
+
+.wp-block-kw-package-social-proof {
+
+	/* Ticker marquee — @keyframes cannot be defined via Tailwind */
+	@keyframes sp-ticker-scroll {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(-50%);
+		}
+	}
+
+	/* Ticker track animation — Tailwind cannot apply named keyframe animations */
+	.sp-ticker-track {
+		animation: sp-ticker-scroll 30s linear infinite;
+	}
+
+	/* Pause ticker on hover — Tailwind cannot pause/play animations */
+	&[data-style="logo-ticker"]:hover .sp-ticker-track {
+		animation-play-state: paused;
+	}
+
+	/* Card hover lift — Tailwind handles transform + shadow but
+	   combining both on hover with transition requires a base state */
+	&[data-style="testimonials"] blockquote,
+	&[data-style="reviews"] article,
+	&[data-style="case-studies"] article {
+		transition: transform 200ms ease, box-shadow 200ms ease;
+	}
+
+	&[data-style="testimonials"] blockquote:hover,
+	&[data-style="reviews"] article:hover,
+	&[data-style="case-studies"] article:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	}
+
+	/* Stats counter animation — Tailwind cannot define @keyframes for count-up fade */
+	@keyframes sp-stat-fade-in {
+		from {
+			opacity: 0;
+			transform: translateY(0.5rem);
+		}
+
+		to {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	&[data-style="stats"].sp-animated .sp-stat-item {
+		animation: sp-stat-fade-in 600ms ease forwards;
+	}
+
+	/* Stagger delays for stats — Tailwind cannot set per-child animation-delay */
+	&[data-style="stats"].sp-animated .sp-stat-item:nth-child(1) {
+		animation-delay: 0ms;
+	}
+
+	&[data-style="stats"].sp-animated .sp-stat-item:nth-child(2) {
+		animation-delay: 100ms;
+	}
+
+	&[data-style="stats"].sp-animated .sp-stat-item:nth-child(3) {
+		animation-delay: 200ms;
+	}
+
+	&[data-style="stats"].sp-animated .sp-stat-item:nth-child(4) {
+		animation-delay: 300ms;
+	}
+
+	&[data-style="stats"].sp-animated .sp-stat-item:nth-child(5) {
+		animation-delay: 400ms;
+	}
+
+	&[data-style="stats"].sp-animated .sp-stat-item:nth-child(6) {
+		animation-delay: 500ms;
+	}
+
+	&[data-style="stats"].sp-animated .sp-stat-item:nth-child(7) {
+		animation-delay: 600ms;
+	}
+
+	/* Case study link arrow nudge on hover — ::after pseudo not needed,
+	   but transition on sibling SVG via parent hover is cleaner in SCSS */
+	&[data-style="case-studies"] a svg {
+		transition: transform 200ms ease;
+	}
+
+	&[data-style="case-studies"] a:hover svg {
+		transform: translateX(3px);
+	}
+
+	/* Focus visible for cards */
+	blockquote:focus-visible,
+	article:focus-visible {
+		outline: 2px solid var(--wp--preset--color--accent);
+		outline-offset: 2px;
+		border-radius: 0.5rem;
+	}
+
+	/* Reduced motion */
+	@media (prefers-reduced-motion: reduce) {
+
+		.sp-ticker-track,
+		blockquote,
+		article,
+		a svg,
+		.sp-stat-item {
+			animation-duration: 0.01ms !important;
+			animation-iteration-count: 1 !important;
+			transition-duration: 0.01ms !important;
+		}
+	}
+}

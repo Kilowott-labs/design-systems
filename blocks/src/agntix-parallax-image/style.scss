@@ -1,0 +1,26 @@
+/**
+ * style.scss — agntix-parallax-image
+ * Only CSS that Tailwind cannot express. All colors via theme.json tokens.
+ */
+
+.wp-block-agent-theme-agntix-parallax-image {
+    // Responsive section height using CSS custom properties set inline by save.js.
+    // Tailwind cannot use CSS custom properties inside responsive height utilities.
+    height: var(--parallax-height-mobile, 25rem);
+
+    @media (min-width: 768px) {
+        height: var(--parallax-height, 50rem);
+    }
+
+    // Image positioned absolutely to extend beyond container for parallax room.
+    // Tailwind cannot combine absolute + 130% height + object-fit in a single utility.
+    .parallax-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 130%;
+        object-fit: cover;
+        will-change: transform;
+    }
+}

@@ -1,0 +1,454 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.4/theme.json",
+  "version": 2,
+
+  "settings": {
+    "appearanceTools": true,
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1400px"
+    },
+    "color": {
+      "defaultPalette": false,
+      "palette": [
+        {
+          "slug": "teal",
+          "name": "Teal (Primary)",
+          "color": "#2f6f6a"
+        },
+        {
+          "slug": "blue-grey",
+          "name": "Blue Grey (Secondary)",
+          "color": "#9fa9bc"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "color": "#ffffff"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "color": "#000000"
+        },
+        {
+          "slug": "forest-green",
+          "name": "Forest Green",
+          "color": "#2e6b3f"
+        },
+        {
+          "slug": "mango",
+          "name": "Mango",
+          "color": "#f6b44c"
+        },
+        {
+          "slug": "terracotta",
+          "name": "Terracotta",
+          "color": "#b7423a"
+        },
+        {
+          "slug": "royal-blue",
+          "name": "Royal Blue",
+          "color": "#3f6cb5"
+        },
+        {
+          "slug": "grey-dark",
+          "name": "Dark Grey",
+          "color": "#2b2b2b"
+        },
+        {
+          "slug": "grey",
+          "name": "Grey",
+          "color": "#7a7a7a"
+        },
+        {
+          "slug": "grey-light",
+          "name": "Light Grey",
+          "color": "#d6d6d6"
+        },
+        {
+          "slug": "near-black",
+          "name": "Near Black",
+          "color": "#141414"
+        },
+        {
+          "slug": "lime",
+          "name": "Lime",
+          "color": "#C1ED00"
+        },
+        {
+          "slug": "grey-mid",
+          "name": "Mid Grey",
+          "color": "#4D5051"
+        },
+        {
+          "slug": "testimonial-bg",
+          "name": "Testimonial Background",
+          "color": "#1a1b1e"
+        },
+        {
+          "slug": "card-bg",
+          "name": "Card Background",
+          "color": "#0e0f11"
+        },
+        {
+          "slug": "cta-button",
+          "name": "CTA Button",
+          "color": "#d0ff71"
+        },
+        {
+          "slug": "cta-text",
+          "name": "CTA Text",
+          "color": "#141414"
+        },
+        {
+          "slug": "hero-bg",
+          "name": "Hero Background",
+          "color": "#f6f8ef"
+        },
+        {
+          "slug": "cream",
+          "name": "Cream",
+          "color": "#f9f4e8"
+        },
+        {
+          "slug": "dark",
+          "name": "Dark",
+          "color": "#0a0a0a"
+        },
+        {
+          "slug": "dark-alt",
+          "name": "Dark Alt",
+          "color": "#141414"
+        },
+        {
+          "slug": "dot-pink",
+          "name": "Dot Pink",
+          "color": "#fb4566"
+        },
+        {
+          "slug": "light-grey",
+          "name": "Light Grey BG",
+          "color": "#f6f6f9"
+        },
+        {
+          "slug": "foreground",
+          "name": "Foreground",
+          "color": "#111827"
+        },
+        {
+          "slug": "foreground-muted",
+          "name": "Foreground Muted",
+          "color": "#6B7280"
+        },
+        {
+          "slug": "foreground-subtle",
+          "name": "Foreground Subtle",
+          "color": "#9CA3AF"
+        },
+        {
+          "slug": "surface",
+          "name": "Surface",
+          "color": "#FAFAFA"
+        },
+        {
+          "slug": "surface-warm",
+          "name": "Surface Warm",
+          "color": "#F5F0EB"
+        },
+        {
+          "slug": "background-dark",
+          "name": "Background Dark",
+          "color": "#0F172A"
+        },
+        {
+          "slug": "border",
+          "name": "Border",
+          "color": "#E5E7EB"
+        },
+        {
+          "slug": "border-warm",
+          "name": "Border Warm",
+          "color": "#D4C4B8"
+        },
+        {
+          "slug": "border-dark",
+          "name": "Border Dark",
+          "color": "#1E293B"
+        },
+        {
+          "slug": "accent",
+          "name": "Accent",
+          "color": "#4F46E5"
+        },
+        {
+          "slug": "accent-light",
+          "name": "Accent Light",
+          "color": "#818CF8"
+        },
+        {
+          "slug": "accent-surface",
+          "name": "Accent Surface",
+          "color": "#EEF2FF"
+        },
+        {
+          "slug": "foreground-on-dark",
+          "name": "Foreground On Dark",
+          "color": "#E2E8F0"
+        },
+        {
+          "slug": "muted-on-dark",
+          "name": "Muted On Dark",
+          "color": "#94A3B8"
+        },
+        {
+          "slug": "surface-dark",
+          "name": "Surface Dark",
+          "color": "#1E293B"
+        },
+        {
+          "slug": "body-text",
+          "name": "Body Text",
+          "color": "#374151"
+        },
+        {
+          "slug": "star-yellow",
+          "name": "Star Yellow",
+          "color": "#FBBF24"
+        },
+        {
+          "slug": "review-bg",
+          "name": "Review Background",
+          "color": "#F9FAFB"
+        },
+        {
+          "slug": "review-border",
+          "name": "Review Border",
+          "color": "#F3F4F6"
+        },
+        {
+          "slug": "divider-dark",
+          "name": "Divider Dark",
+          "color": "#334155"
+        },
+        {
+          "slug": "muted-warm",
+          "name": "Muted Warm",
+          "color": "#71717A"
+        }
+      ]
+    },
+    "typography": {
+      "defaultFontSizes": false,
+      "fontFamilies": [
+        {
+          "slug": "dm-sans",
+          "name": "DM Sans",
+          "fontFamily": "\"DM Sans\", system-ui, -apple-system, BlinkMacSystemFont, sans-serif"
+        },
+        {
+          "slug": "mango",
+          "name": "MangoGrotesque",
+          "fontFamily": "'MangoGrotesque', serif"
+        },
+        {
+          "slug": "mango-semibold",
+          "name": "MangoGrotesque SemiBold",
+          "fontFamily": "'MangoGrotesqueSemBd', serif"
+        },
+        {
+          "slug": "clash",
+          "name": "Clash Display",
+          "fontFamily": "'ClashDisplay-Medium', serif"
+        },
+        {
+          "slug": "inter",
+          "name": "Inter",
+          "fontFamily": "'Inter', sans-serif"
+        },
+        {
+          "slug": "libre-baskerville",
+          "name": "Libre Baskerville",
+          "fontFamily": "'Libre Baskerville', Georgia, 'Times New Roman', serif"
+        },
+        {
+          "slug": "playfair",
+          "name": "Playfair Display",
+          "fontFamily": "'Playfair Display', Georgia, 'Times New Roman', serif"
+        }
+      ],
+      "fontSizes": [
+        {
+          "slug": "h1",
+          "name": "Heading XL",
+          "size": "3.5rem",
+          "fluid": {
+            "min": "2.75rem",
+            "max": "3.5rem"
+          }
+        },
+        {
+          "slug": "h2",
+          "name": "Heading L",
+          "size": "2.5rem",
+          "fluid": {
+            "min": "2rem",
+            "max": "2.5rem"
+          }
+        },
+        {
+          "slug": "h3",
+          "name": "Heading M",
+          "size": "2rem"
+        },
+        {
+          "slug": "h4",
+          "name": "Heading S",
+          "size": "1.5rem"
+        },
+        {
+          "slug": "body",
+          "name": "Body",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "small",
+          "name": "Small",
+          "size": "0.875rem"
+        }
+      ]
+    },
+    "spacing": {
+      "units": ["px", "rem", "em", "%", "vw"],
+      "spacingSizes": [
+        { "slug": "xs", "size": "0.5rem", "name": "XS" },
+        { "slug": "s", "size": "1rem", "name": "S" },
+        { "slug": "m", "size": "1.5rem", "name": "M" },
+        { "slug": "l", "size": "3rem", "name": "L" },
+        { "slug": "xl", "size": "5rem", "name": "XL" }
+      ]
+    }
+  },
+  "styles": {
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--dm-sans)",
+      "lineHeight": "1.5"
+    },
+    "color": {
+      "background": "var(--wp--preset--color--white)",
+      "text": "var(--wp--preset--color--grey-dark)"
+    },
+    "elements": {
+      "h1": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h1)",
+          "fontWeight": "800",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "1.15"
+        },
+        "color": {
+          "text": "var(--wp--preset--color--teal)"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h2)",
+          "fontWeight": "700",
+          "letterSpacing": "-0.02em",
+          "lineHeight": "1.2"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--h3)",
+          "fontWeight": "600",
+          "letterSpacing": "-0.02em"
+        }
+      },
+      "p": {
+        "typography": {
+          "fontSize": "var(--wp--preset--font-size--body)",
+          "lineHeight": "1.6"
+        }
+      },
+      "a": {
+        "color": {
+          "text": "var(--wp--preset--color--teal)"
+        },
+        "typography": {
+          "fontWeight": "600"
+        }
+      }
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "radius": "4px"
+        },
+        "typography": {
+          "fontWeight": "600"
+        }
+      },
+      "core/group": {
+        "spacing": {
+          "padding": {
+            "top": "var(--wp--preset--spacing--m)",
+            "bottom": "var(--wp--preset--spacing--m)"
+          }
+        }
+      }
+    }
+  },
+  "templateParts": [
+    {
+      "name": "header",
+      "title": "Header",
+      "area": "header"
+    },
+    {
+      "name": "header-transparent",
+      "title": "Header Transparent",
+      "area": "header"
+    },
+    {
+      "name": "header-search",
+      "title": "Header Search",
+      "area": "header"
+    },
+    {
+      "name": "header-mega",
+      "title": "Header Mega Menu",
+      "area": "header"
+    },
+    {
+      "name": "header-ecommerce",
+      "title": "Header E-commerce",
+      "area": "header"
+    },
+    {
+      "name": "footer",
+      "title": "Footer",
+      "area": "footer"
+    },
+    {
+      "name": "footer-minimal",
+      "title": "Footer Minimal",
+      "area": "footer"
+    },
+    {
+      "name": "footer-dark",
+      "title": "Footer Dark",
+      "area": "footer"
+    },
+    {
+      "name": "footer-newsletter",
+      "title": "Footer Newsletter",
+      "area": "footer"
+    },
+    {
+      "name": "footer-app",
+      "title": "Footer App Download",
+      "area": "footer"
+    }
+  ]
+}

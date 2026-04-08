@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Stats — Design Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--background-dark: #0F172A;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-muted: #6B7280;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--border: #E5E7EB;
+      --wp--preset--color--grey-light: #d6d6d6;
+      --wp--preset--color--forest-green: #2e6b3f;
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, sans-serif;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+    }
+    :focus-visible { outline: 2px solid var(--wp--preset--color--forest-green); outline-offset: 2px; border-radius: 2px; }
+    @media (prefers-reduced-motion: reduce) { *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    body::after { content: 'Desktop (1440px+)'; position: fixed; bottom: 8px; right: 12px; font-size: 11px; color: #999; pointer-events: none; }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px) { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-white">
+
+  <section class="bg-[var(--wp--preset--color--white)]" aria-labelledby="hero-stats-heading">
+    <div class="border-b border-[var(--wp--preset--color--border)]"></div>
+    <div class="max-w-[80rem] mx-auto flex flex-col lg:flex-row gap-12 lg:gap-20 px-5 md:px-10 lg:px-[5.625rem] py-12 md:py-16 items-center">
+      <div class="lg:w-[35rem] shrink-0 flex flex-col gap-7">
+        <span class="text-xs font-semibold tracking-[0.15625rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">WEALTH MANAGEMENT &middot; EST. 1987</span>
+        <h2 id="hero-stats-heading" class="text-[2rem] md:text-[2.5rem] lg:text-[2.875rem] font-normal tracking-tight leading-[1.2] text-[var(--wp--preset--color--background-dark)]">
+          Building legacies through disciplined investing
+        </h2>
+        <p class="text-base leading-[1.7] text-[var(--wp--preset--color--foreground-muted)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[30rem]">
+          For over three decades, Meridian has helped families and institutions preserve and grow wealth through evidence-based strategies and personal service.
+        </p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="inline-flex items-center rounded-md bg-[var(--wp--preset--color--forest-green)] text-[var(--wp--preset--color--white)] px-8 py-4 text-[0.9375rem] font-semibold">Schedule a Call</a>
+          <a href="#" class="inline-flex items-center rounded-md border border-[var(--wp--preset--color--grey-light)] text-[var(--wp--preset--color--background-dark)] px-8 py-4 text-[0.9375rem] font-semibold">Our Approach</a>
+        </div>
+      </div>
+      <div class="flex-1 w-full">
+        <dl class="flex flex-col">
+          <div class="border-t border-[var(--wp--preset--color--border)] py-8 flex flex-col gap-2">
+            <dt class="text-[3rem] font-normal tracking-tight text-[var(--wp--preset--color--forest-green)]">$12.8B</dt>
+            <dd class="text-sm font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)] m-0">Assets under management</dd>
+          </div>
+          <div class="border-t border-[var(--wp--preset--color--border)] py-8 flex flex-col gap-2">
+            <dt class="text-[3rem] font-normal tracking-tight text-[var(--wp--preset--color--forest-green)]">97%</dt>
+            <dd class="text-sm font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)] m-0">Client retention rate over 10 years</dd>
+          </div>
+          <div class="border-t border-[var(--wp--preset--color--border)] py-8 flex flex-col gap-2">
+            <dt class="text-[3rem] font-normal tracking-tight text-[var(--wp--preset--color--forest-green)]">850+</dt>
+            <dd class="text-sm font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)] m-0">Families and institutions served</dd>
+          </div>
+          <div class="border-t border-[var(--wp--preset--color--border)] py-8 flex flex-col gap-2">
+            <dt class="text-[3rem] font-normal tracking-tight text-[var(--wp--preset--color--forest-green)]">36 yrs</dt>
+            <dd class="text-sm font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)] m-0">Of consistent, above-benchmark returns</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

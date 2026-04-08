@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hero Section — Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { margin: 0; background: #e5e5e5; display: flex; justify-content: center; padding: 20px; }
+    @media (min-width: 768px) { body { padding: 40px; } }
+  </style>
+</head>
+<body>
+
+<!-- Phase 1 — Raw HTML from Pencil design (designs/test.pen → Hero frame 2JW7o) -->
+
+<section class="relative w-full overflow-hidden rounded-2xl lg:rounded-3xl bg-[#f6f8ef]" style="max-width:1920px;">
+
+  <!-- Decorative blurred gradient ellipse -->
+  <div class="absolute -left-8 top-20 lg:top-40 h-[500px] lg:h-[955px] w-[400px] lg:w-[803px] rounded-full opacity-20 blur-[100px] lg:blur-[175px]"
+       style="background: linear-gradient(-40deg, #f7ef33, #43e508);"
+       aria-hidden="true"></div>
+
+  <!-- Texture overlay -->
+  <div class="absolute inset-0 opacity-40" aria-hidden="true">
+    <img src="images/image-import-23.png" alt="" class="h-full w-full object-cover" loading="lazy" />
+  </div>
+
+  <!-- Nav bar -->
+  <nav class="absolute left-4 right-4 md:left-10 md:right-10 top-4 md:top-8 z-10 flex items-center justify-between">
+    <div class="flex items-center gap-6 lg:gap-12">
+      <!-- Logo -->
+      <a href="/" class="flex h-10 w-28 lg:w-32 items-center justify-center" aria-label="Agntix home">
+        <img src="images/agntix-logo.svg" alt="Agntix" class="h-auto w-full" loading="lazy" />
+      </a>
+      <!-- Nav links — hidden on mobile -->
+      <a href="#" class="hidden md:inline text-[15px] lg:text-[17px] font-medium text-[#141414]">Home</a>
+      <a href="#" class="hidden md:inline text-[15px] lg:text-[17px] font-medium text-[#141414]">About Us</a>
+      <a href="#" class="hidden lg:inline text-[17px] font-medium text-[#141414]">Portfolio</a>
+      <a href="#" class="hidden lg:inline text-[17px] font-medium text-[#141414]">Pages</a>
+      <a href="#" class="hidden lg:inline text-[17px] font-medium text-[#141414]">Shop</a>
+    </div>
+    <!-- CTA button -->
+    <a href="#contact" class="flex items-center justify-center gap-2.5 rounded-lg lg:rounded-[10px] bg-[#c1ed00] px-4 py-3 md:px-6 md:py-5 backdrop-blur-sm">
+      <svg width="15" height="12" viewBox="0 0 15 12" fill="none" aria-hidden="true">
+        <path d="M1 1h13M1 6h13M1 11h8" stroke="#141414" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="text-xs md:text-sm font-semibold tracking-tight leading-8 text-[#141414]">Send a message</span>
+    </a>
+  </nav>
+
+  <!-- Main content area -->
+  <div class="relative z-[1] flex flex-col lg:flex-row min-h-[600px] md:min-h-[700px] lg:min-h-[930px] items-start lg:items-end justify-end lg:justify-between gap-8 lg:gap-[297px] px-4 md:px-10 pt-20 md:pt-24">
+
+    <!-- Left column -->
+    <div class="flex flex-col gap-8 lg:gap-14 pb-8 md:pb-12 lg:pb-[72px] pl-0 md:pl-12 lg:pl-[195px]">
+
+      <!-- Content group -->
+      <div class="flex flex-col gap-8 lg:gap-14">
+
+        <!-- Tag -->
+        <div class="flex items-center gap-1">
+          <span class="text-sm font-medium leading-[2.14] text-[#141414]">🔥</span>
+          <span class="text-sm font-medium leading-[2.14] tracking-normal text-[#141414] uppercase">Best Marketing Agency</span>
+        </div>
+
+        <!-- Title -->
+        <div class="flex flex-col gap-2 md:gap-4">
+          <div class="flex items-center gap-3 md:gap-6">
+            <h1 class="font-['Space_Grotesk'] text-[48px] md:text-[80px] lg:text-[114px] font-bold tracking-[-2px] md:tracking-[-3.2px] lg:tracking-[-4.56px] leading-[1.05] text-[#141414]">Digital</h1>
+            <!-- Decorative megaphone icon -->
+            <div class="relative h-[40px] w-[64px] md:h-[65px] md:w-[104px] lg:h-[93px] lg:w-[148px] overflow-hidden rounded-[16px] md:rounded-[24px] lg:rounded-[36px]">
+              <img src="images/image-import-65.png" alt="" class="h-full w-full object-cover" aria-hidden="true" loading="lazy" />
+            </div>
+          </div>
+          <span class="font-['Space_Grotesk'] text-[48px] md:text-[80px] lg:text-[114px] font-bold tracking-[-2px] md:tracking-[-3.2px] lg:tracking-[-4.56px] leading-[0.88] text-[#141414]">marketing</span>
+          <span class="font-['Space_Grotesk'] text-[48px] md:text-[80px] lg:text-[114px] font-bold tracking-[-2px] md:tracking-[-3.2px] lg:tracking-[-4.56px] leading-[0.88] text-[#141414]">agency</span>
+        </div>
+
+        <!-- CTA button -->
+        <a href="#contact" class="inline-flex items-center justify-center gap-2.5 rounded-lg lg:rounded-[10px] bg-[#141414] px-6 py-4 md:px-[34px] md:py-6 self-start" role="button">
+          <span class="text-sm md:text-base font-semibold tracking-tight leading-7 text-white">Get in Touch</span>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+            <path d="M1 9L9 1M9 1H1M9 1v8" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="flex items-center gap-10 md:gap-16 lg:gap-[98px]">
+        <div class="flex flex-col gap-3 md:gap-6">
+          <span class="font-['Space_Grotesk'] text-[36px] md:text-[48px] lg:text-[60px] font-medium tracking-[-1.5px] md:tracking-[-2px] lg:tracking-[-2.4px] leading-[0.6] md:leading-[0.47] text-[#111013]">98%</span>
+          <span class="font-['Space_Grotesk'] text-sm md:text-base font-medium leading-[1.375] text-[#111013]">Clients Satisfied and<br/>Repeating</span>
+        </div>
+        <div class="flex flex-col gap-3 md:gap-6">
+          <span class="font-['Space_Grotesk'] text-[36px] md:text-[48px] lg:text-[60px] font-medium tracking-[-1.5px] md:tracking-[-2px] lg:tracking-[-2.4px] leading-[0.6] md:leading-[0.47] text-[#111013]">125+</span>
+          <span class="font-['Space_Grotesk'] text-sm md:text-base font-medium leading-[1.375] text-[#111013]">Projects Completed<br/>in 24 Countries</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right column — Image with card overlay -->
+    <!-- Hidden on mobile, shown from md up -->
+    <div class="hidden md:flex relative h-[400px] md:h-[600px] lg:h-[930px] w-full md:w-[400px] lg:w-[826px] flex-shrink-0 items-end justify-end overflow-hidden rounded-2xl lg:rounded-3xl p-4 md:p-6 lg:p-8">
+      <img src="images/image-import-27.png" alt="Creative team working on digital marketing project" class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+      <!-- Content card overlay -->
+      <div class="relative z-[1]">
+        <div class="relative">
+          <!-- Decorative circle shape -->
+          <div class="h-[140px] w-[140px] lg:h-[200px] lg:w-[200px] rounded-full border border-[#141414]"></div>
+          <!-- Card text -->
+          <p class="absolute left-5 lg:left-[30px] top-14 lg:top-24 font-['Space_Grotesk'] text-[22px] lg:text-[32px] font-bold tracking-[-0.5px] lg:tracking-[-0.64px] leading-[1.06] text-[#141414]">
+            World-class<br/>digital media<br/>agency.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+</body>
+</html>

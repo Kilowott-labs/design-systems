@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Product Showcase — Design Preview</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --wp--preset--color--surface: #FAFAFA;
+      --wp--preset--color--foreground: #111827;
+      --wp--preset--color--foreground-muted: #6B7280;
+      --wp--preset--color--foreground-subtle: #9CA3AF;
+      --wp--preset--color--white: #ffffff;
+      --wp--preset--color--border: #E5E7EB;
+      --wp--preset--color--accent: #4F46E5;
+      --wp--preset--font-family--dm-sans: "DM Sans", system-ui, sans-serif;
+      --wp--preset--font-family--inter: "Inter", sans-serif;
+    }
+    :focus-visible { outline: 2px solid var(--wp--preset--color--accent); outline-offset: 2px; border-radius: 2px; }
+    @media (prefers-reduced-motion: reduce) { *, ::before, ::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
+    body::after { content: 'Desktop (1440px+)'; position: fixed; bottom: 8px; right: 12px; font-size: 11px; color: #999; pointer-events: none; }
+    @media (max-width: 1024px) { body::after { content: 'Tablet (768-1024px)'; } }
+    @media (max-width: 640px) { body::after { content: 'Mobile (< 640px)'; } }
+  </style>
+</head>
+<body class="bg-white">
+
+  <section class="bg-[var(--wp--preset--color--surface)] flex flex-col" aria-labelledby="hero-product-heading">
+    <div class="flex-1 flex flex-col items-center justify-center px-5 md:px-10 lg:px-[5.625rem] py-8 md:py-12">
+      <div class="flex flex-col items-center gap-4 mb-8">
+        <span class="text-[0.6875rem] font-bold tracking-[0.1875rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">AURA PRO MAX</span>
+        <h2 id="hero-product-heading" class="text-[3rem] md:text-[4rem] lg:text-[4.5rem] font-bold tracking-tight leading-[1] text-center font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--foreground)]">
+          Sound, Perfected.
+        </h2>
+        <p class="text-base leading-[1.65] text-center text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)] max-w-[30rem]">
+          40-hour battery. Spatial audio. Industry-leading noise cancellation.<br>Experience music the way it was meant to be heard.
+        </p>
+      </div>
+      <figure class="mb-8">
+        <div class="max-w-[31.25rem] w-full h-[21.25rem] bg-[var(--wp--preset--color--border)] rounded-lg flex items-center justify-center text-[var(--wp--preset--color--foreground-muted)]">Product Image Placeholder</div>
+      </figure>
+      <ul class="flex flex-wrap justify-between gap-8 md:gap-12 w-full max-w-[50rem] list-none p-0 m-0 px-4 md:px-16">
+        <li class="flex flex-col items-center gap-1">
+          <span class="text-[1.5rem] md:text-[1.75rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--foreground)]">40h</span>
+          <span class="text-xs font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Battery Life</span>
+        </li>
+        <li class="flex flex-col items-center gap-1">
+          <span class="text-[1.5rem] md:text-[1.75rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--foreground)]">-48dB</span>
+          <span class="text-xs font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Noise Cancelling</span>
+        </li>
+        <li class="flex flex-col items-center gap-1">
+          <span class="text-[1.5rem] md:text-[1.75rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--foreground)]">Spatial</span>
+          <span class="text-xs font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Dolby Atmos</span>
+        </li>
+        <li class="flex flex-col items-center gap-1">
+          <span class="text-[1.5rem] md:text-[1.75rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--dm-sans)] text-[var(--wp--preset--color--foreground)]">USB-C</span>
+          <span class="text-xs font-medium text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">Fast Charge</span>
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-center justify-center gap-4 h-16 px-5 md:px-[5.625rem]">
+      <a href="#" class="inline-flex items-center rounded-full bg-[var(--wp--preset--color--foreground)] text-[var(--wp--preset--color--white)] px-10 py-3.5 text-[0.9375rem] font-bold tracking-tight font-[family-name:var(--wp--preset--font-family--inter)] transition-opacity duration-200 hover:opacity-90">Buy &mdash; $349</a>
+      <span class="text-[0.8125rem] text-[var(--wp--preset--color--foreground-subtle)] font-[family-name:var(--wp--preset--font-family--inter)]">or $29/mo for 12 months</span>
+    </div>
+  </section>
+
+</body>
+</html>

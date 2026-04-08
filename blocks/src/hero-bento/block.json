@@ -1,0 +1,75 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "kw-package/hero-bento",
+  "version": "1.0.0",
+  "title": "Hero Bento Grid",
+  "category": "ytf",
+  "icon": "grid-view",
+  "description": "SaaS dashboard hero with left text column and right bento grid of metric cards. Supports light/dark color modes.",
+  "textdomain": "kw-package",
+  "attributes": {
+    "colorMode": {
+      "type": "string",
+      "default": "light",
+      "enum": ["light", "dark"]
+    },
+    "heading": {
+      "type": "string",
+      "default": "Your entire business, one dashboard"
+    },
+    "subheading": {
+      "type": "string",
+      "default": "Connect all your tools, unify your metrics, and make data-driven decisions — without switching tabs."
+    },
+    "showBadge": {
+      "type": "boolean",
+      "default": true
+    },
+    "badgeText": {
+      "type": "string",
+      "default": "AI-powered insights"
+    },
+    "badgeLabel": {
+      "type": "string",
+      "default": "NEW"
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "default": "Start Free Trial"
+    },
+    "primaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "default": "Watch Demo"
+    },
+    "secondaryCtaUrl": {
+      "type": "string",
+      "default": "#"
+    },
+    "showSecondaryCta": {
+      "type": "boolean",
+      "default": true
+    },
+    "cards": {
+      "type": "array",
+      "default": [
+        { "id": 1, "icon": "chart-bar", "label": "Revenue", "value": "$48.2K", "trend": "+12.5%", "trendUp": true, "size": "large", "dark": false, "accent": false },
+        { "id": 2, "icon": "users", "label": "Active Users", "value": "2,847", "trend": "Online now", "trendUp": false, "size": "large", "dark": true, "accent": false },
+        { "id": 3, "icon": "zap", "label": "Conversion", "value": "3.8%", "trend": "", "trendUp": false, "size": "small", "dark": false, "accent": false },
+        { "id": 4, "icon": "globe", "label": "Traffic", "value": "124K", "trend": "", "trendUp": false, "size": "small", "dark": false, "accent": false },
+        { "id": 5, "icon": "sparkles", "label": "AI Insights", "value": "12 new", "trend": "", "trendUp": false, "size": "small", "dark": false, "accent": true }
+      ]
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": ["wide", "full"],
+    "spacing": { "padding": true, "margin": true }
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css"
+}
