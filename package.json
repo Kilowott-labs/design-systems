@@ -26,7 +26,7 @@
     "dependencies": {
         "@wordpress/blocks": "^15.4.0",
         "@wordpress/create-block": "^4.74.0",
-        "@wordpress/data": "^9.28.0",
+        "@wordpress/data": "^10.44.0",
         "@wordpress/dom-ready": "^3.5.0",
         "@wordpress/editor": "^13.0.0",
         "@wordpress/element": "^2.6.0",
