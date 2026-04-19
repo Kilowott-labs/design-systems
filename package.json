@@ -34,7 +34,7 @@
         "@wordpress/i18n": "^4.9.0",
         "@wordpress/icons": "^10.0.0",
         "gsap": "^3.14.2",
-        "jarallax": "^2.2.1",
+        "jarallax": "^3.0.0",
         "magnific-popup": "^1.2.0",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
